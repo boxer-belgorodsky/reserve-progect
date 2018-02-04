@@ -7,7 +7,9 @@
   <link rel="stylesheet" type="text/css" href="css/animate.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+  <link rel="stylesheet" type="text/css" href="css/slick.css">
+  <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+  <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css">
   <link rel="stylesheet" type="text/css" href="css/main.css">
   <script type="text/javascript">
     document.documentElement.className = document.documentElement.className.replace("no-js","js");
@@ -19,7 +21,7 @@
 
 <div class="searchdown">
   <form action="" method="post" class="nav-search">
-    <input type="text" name="search" class="search" required>
+    <input type="text" placeholder="Введите название заповедника" name="search" class="search" required>
     <button type="submit" class="search-submit">Искать <i class="fa fa-arrow-right"></i></button>
   </form>
   <div class="found-search"></div>
@@ -33,7 +35,7 @@
         <a class="nav-animate" href="index.php">Главная</a>
       </li>
       <li>
-        <a class="nav-animate" href="https://vk.com/id172335251" target="_blank">Разработчик сайта</a>
+        <a class="nav-animate" href="https://github.com/boxer-belgorodsky" target="_blank">Разработчик сайта</a>
       </li>
       <li style="position:relative">
         <a class="nav-animate" href="javascript://0">Подписаться</a><div class="subscribedrop">

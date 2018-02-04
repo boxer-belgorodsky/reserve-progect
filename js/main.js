@@ -335,17 +335,18 @@ $('.my-close').on("click" , function(){
 //typed
 
 
+if(document.documentElement.clientWidth > 992){
+  var typed = new Typed(".interactive-nav" , {
+      strings : ["" ,"<a href='ymskaya-step.php'>заповедник Ямская степь</a>","<a href='bald-mountain.php'>заповедник Лысые горы</a>" , "<a href='forest-in-vorscla.php'>заповедник Лес-на-Ворскле</a>" , "<a href='ostravaevy-yar.php'>заповедник Острасьевы яры</a>" , "<a href='bekaryukovsky-bor.php'>заповедник Бекарюковский бор</a>" ,"<a href='walls-highlands.php'>заповедник Стенки – Изгорья</a>"],
+      typeSpeed: 50,
+      startDelay:8000,
+      backDelay:2000,
+      backSpeed: 60,
+      loop:true,
+      loopCount: Infinity
 
-var typed = new Typed(".interactive-nav" , {
-    strings : ["" ,"<a href='ymskaya-step.php'>заповедник Ямская степь</a>","<a href='bald-mountain.php'>заповедник Лысые горы</a>" , "<a href='forest-in-vorscla.php'>заповедник Лес-на-Ворскле</a>" , "<a href='ostravaevy-yar.php'>заповедник Острасьевы яры</a>" , "<a href='bekaryukovsky-bor.php'>заповедник Бекарюковский бор</a>" ,"<a href='walls-highlands.php'>заповедник Стенки – Изгорья</a>"],
-    typeSpeed: 50,
-    startDelay:8000,
-    backDelay:2000,
-    backSpeed: 60,
-    loop:true,
-    loopCount: Infinity
-
-})
+  })
+}
 if(document.querySelector(".header-take")){
  var typed = new Typed('.header-take', {
    stringsElement: '.header-desc',
@@ -495,6 +496,70 @@ $(".close-mail").bind('click' , function(e){
   $(".mail-to-me").removeClass("mail-to-me-up");
   $(".close-mail").addClass("close-mail-active");
 
+});
+
+var sideBarUl = document.querySelector(".nav-main-list");
+var allh4 = document.querySelectorAll("h4");
+var createSideBarLi;
+var createSideBarA;
+var createText;
+for( var i = 0 ; i < allh4.length ; i++){
+  createSideBarLi = document.createElement("li");
+  createSideBarA = document.createElement("a");
+  createText = document.createTextNode(allh4[i].innerHTML);
+  createSideBarA.appendChild(createText);
+  createSideBarLi.appendChild(createSideBarA);
+  sideBarUl.appendChild(createSideBarLi);
+  allh4[i].id = i;
+  createSideBarA.className =  i;
+}
+
+var navA = document.querySelectorAll(".nav-main-list li a");
+
+$(".nav-main-list li a").on("click" , function(e){
+
+ var scroll =  e.target.className;
+
+  $("html , body").animate({
+      scrollTop : $("#" + scroll).offset().top + -200 + "px"
+
+         });
+
+});
+
+var heightTwo = document.getElementById("two").getBoundingClientRect().height - document.documentElement.clientHeight;
+$(document).on("scroll" , function(e){
+
+for (var i = 0 ; i < allh4.length ; i++){
+
+      if(allh4[i].getBoundingClientRect().top < 210){
+        var id = allh4[i].id;
+        navA[i].classList.add("nav-a-active");
+        if(i != 0)
+          navA[i].parentElement.previousElementSibling.firstElementChild.classList.remove("nav-a-active");
+    }
+    else{
+        navA[i].classList.remove("nav-a-active");
+      }
+
+}
+
+  console.log(heightTwo);
+  if(sideBarUl.getBoundingClientRect().top < -200 || sideBarUl.getBoundingClientRect().top > 500){
+    if( document.getElementById("two").getBoundingClientRect().top > -heightTwo)
+    document.querySelector(".nav-main").style.top = Math.abs(document.getElementById("two").getBoundingClientRect().top) + 100 + "px";
+  }
+
+});
+
+
+$(".slick").slick({
+  dots: true,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 1,
+  centerMode: true,
+  variableWidth: true
 });
 
 

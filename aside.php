@@ -1,4 +1,4 @@
-<aside class="col-md-4">
+<aside class="col-md-12 col-lg-12 col-xl-12">
        <div class="aside-wrapper">
          <div class="email-aside">
            <div class="email-convert"></div>
@@ -14,3 +14,6 @@
          </div>
        </div>
      </aside>
+      <div class="nav-main">
+       <ul class="nav-main-list"></ul>
+      </div>

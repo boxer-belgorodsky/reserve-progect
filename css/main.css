@@ -11,6 +11,9 @@
   font-weight: 400;
   font-style: normal; }
 
+div[style*="text-align: right"] > a[target="_blank"] {
+  display: none; }
+
 .homepage-hero-module {
   position: absolute;
   z-index: 100;
@@ -129,6 +132,7 @@
   position: absolute;
   bottom: 30px;
   left: 50%;
+  z-index: 100000;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%); }
@@ -754,14 +758,18 @@ header {
     transform: translateX(0%); } }
 
 #one {
-  z-index: 10000;
+  z-index: 1000;
   -webkit-box-shadow: 0px 0px 10px  black;
   box-shadow: 0px 0px 10px  black;
   background: -webkit-radial-gradient(white, black);
   background: -o-radial-gradient(white, black);
   background: radial-gradient(white, black);
-  height: 100vh;
+  height: 100%;
   position: relative; }
+  #one .arrow-slide {
+    bottom: 70px; }
+    #one .arrow-slide:hover {
+      bottom: 68px; }
   #one .about-down {
     -webkit-box-shadow: 0px 0px 10px  black;
     box-shadow: 0px 0px 10px  black;
@@ -791,7 +799,38 @@ header {
         font-size: 17px; }
 
 #two {
+  overflow: hidden;
   position: relative; }
+  #two .nav-main {
+    z-index: 100;
+    -webkit-transition: 1s top 1s;
+    -o-transition: 1s top 1s;
+    transition: 1s top 1s;
+    position: absolute;
+    right: 10%;
+    top: 200px; }
+    #two .nav-main .nav-main-list {
+      list-style: none;
+      padding: 0; }
+      #two .nav-main .nav-main-list li a {
+        width: 400px;
+        position: relative;
+        z-index: 1000;
+        padding: 20px 40px;
+        border: 1px solid black;
+        color: black;
+        display: block;
+        background: #FFF; }
+        #two .nav-main .nav-main-list li a:hover {
+          cursor: pointer;
+          background: #2C3E50;
+          color: #FFF; }
+      #two .nav-main .nav-main-list li .nav-a-active {
+        z-index: 10000;
+        -webkit-box-shadow: 0px 0px 15px #16A085;
+        box-shadow: 0px 0px 15px #16A085;
+        background: #2C3E50;
+        color: #FFF; }
   #two #particles-js {
     position: absolute;
     left: 0;
@@ -803,15 +842,14 @@ header {
     text-align: justify;
     background: #FFF;
     padding-top: 100px;
-    margin-top: -10px;
-    z-index: 100; }
+    margin-top: -10px; }
     #two .home-page main h3, #two .home-page main h4 {
       text-align: center; }
   #two .home-page aside {
-    z-index: 1000;
     padding-left: 50px; }
     #two .home-page aside .aside-wrapper {
-      padding-top: 300px; }
+      padding-top: 100px;
+      z-index: 1000; }
       #two .home-page aside .aside-wrapper .email-aside {
         -webkit-box-shadow: 0 0 5px black;
         box-shadow: 0 0 5px black;
@@ -1154,7 +1192,7 @@ main h1 {
   transition: bottom .5s; }
   .mail-to-me:hover {
     cursor: pointer;
-    bottom: -495px; }
+    bottom: -490px; }
   .mail-to-me .close-mail {
     -webkit-transition: .6s opacity 1.5s;
     -o-transition: .6s opacity 1.5s;
@@ -1197,7 +1235,7 @@ main h1 {
       background: #FFF; }
   .mail-to-me .h-mail {
     position: relative;
-    padding: 14px 0 4px;
+    padding: 20px 0 4px;
     text-align: center;
     margin: 0 auto;
     width: 75%;
@@ -1207,7 +1245,7 @@ main h1 {
     background: #16A085;
     color: #fff; }
     .mail-to-me .h-mail .mail-desc {
-      padding: 5px 5px 0;
+      padding: 15px 5px 0;
       display: block;
       font-family: 'PT Sans Caption';
       font-size: 13px;
@@ -1373,7 +1411,114 @@ main h1 {
     -webkit-transform: scale(3);
     transform: scale(3); } }
 
+.slick-item {
+  height: 500px;
+  position: relative; }
+  .slick-item h1 {
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    color: #FFF;
+    position: absolute; }
+  .slick-item a {
+    height: 500px;
+    width: 100%; }
+    .slick-item a img {
+      max-width: 100%; }
+
+.slick-next {
+  width: 20px;
+  height: 20px; }
+  .slick-next::before {
+    font-family: FontAwesome;
+    color: black;
+    font-size: 40px;
+    content: "\f105"; }
+
+.slick-prev {
+  width: 20px;
+  height: 20px; }
+  .slick-prev::before {
+    font-size: 40px;
+    font-family: FontAwesome;
+    color: black;
+    content: "\f104"; }
+
 @media screen and (max-height: 645px) {
-  .submit-mail textarea {
-    max-height: 100px !important;
-    min-height: 100px !important; } }
+  .video-container .filter {
+    font-size: 40px; }
+  .mail-to-me {
+    bottom: -425px; }
+    .mail-to-me:hover {
+      bottom: -390px; }
+    .mail-to-me .submit-mail textarea {
+      max-height: 100px !important;
+      min-height: 100px !important; }
+  .mail-to-me-up {
+    bottom: -10px; }
+    .mail-to-me-up:hover {
+      cursor: auto;
+      bottom: -10px; } }
+
+@media screen and (max-height: 475px) {
+  .video-container .filter {
+    font-size: 30px; } }
+
+@media screen and (max-width: 1700px) {
+  #two .nav-main {
+    right: 5%; }
+    #two .nav-main .nav-main-list li a {
+      width: 300px;
+      font-size: 20px;
+      padding: 15px 20px; } }
+
+@media screen and (max-width: 1200px) {
+  #two .nav-main {
+    right: 2%; }
+    #two .nav-main .nav-main-list li a {
+      width: 300px;
+      font-size: 15px;
+      padding: 15px 20px; }
+  .video-container .filter {
+    font-size: 40px; }
+  .searchdown .nav-search .search {
+    -webkit-box-flex: 3;
+    -ms-flex: 3;
+    flex: 3; } }
+
+@media screen and (max-width: 992px) {
+  #two .nav-main {
+    right: 2%; }
+    #two .nav-main .nav-main-list li a {
+      width: 250px;
+      font-size: 15px;
+      padding: 15px 20px; }
+  .video-container .filter {
+    font-size: 35px; }
+  .interactive-nav {
+    display: none !important; }
+  header .container .main-nav:last-child {
+    width: 10%; }
+  #one .about-down {
+    padding-top: 100px; }
+    #one .about-down .facts-animate {
+      margin: 30px 0;
+      font-size: 30px; }
+      #one .about-down .facts-animate p {
+        width: 100%; }
+    #one .about-down .facts-about-down-desc {
+      font-size: 30px; }
+    #one .about-down .facts-about .facts-about-down-desc {
+      font-size: 20px; } }
+
+@media screen and (max-width: 768px) {
+  #two .nav-main {
+    display: none; }
+  #one .arrow-slide {
+    bottom: 20px; }
+    #one .arrow-slide:hover {
+      bottom: 18px; } }
