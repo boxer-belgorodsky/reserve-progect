@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'PT Sans Caption';
+  src: url("fonts/ptsanscaption-400-normal.woff2") format("woff2"), url("fonts/ptsanscaption-400-normal.woff") format("woff"), url("fonts/ptsanscaption-400-normal.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Fregat';
+  src: url("fonts/fregat-400-normal.woff2") format("woff2"), url("fonts/fregat-400-normal.woff") format("woff"), url("fonts/fregat-400-normal.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }

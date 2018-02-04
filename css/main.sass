@@ -1,0 +1,1118 @@
+@import "../fonts/_fonts"
+
+$awesome: FontAwesome
+// виде фон
+
+
+.homepage-hero-module
+  position: absolute
+  z-index: 100
+  border-right: none;
+  border-left: none;
+  position: relative;
+  height: calc(100% - 100px)
+
+.no-video .video-container video,
+.touch .video-container video
+  display: none;
+
+.no-video .video-container .poster,
+.touch .video-container .poster
+  display: block !important;
+
+.video-container
+  z-index: 100
+  position: relative;
+  bottom: 0%;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background: #000;
+
+.video-container .poster img
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+
+.video-container .filter
+  height: 100%
+
+  display: flex
+  align-items: center
+  z-index: 100;
+  position: absolute;
+  width: 70%;
+  & span
+  color: #FFF
+  font-size: 50px
+
+.video-container video
+  position: absolute;
+  z-index: 0;
+  bottom: 0;
+
+.video-container video.fillWidth
+  width: 100%;
+
+
+.tippy-tooltip.honeybee-theme .tippy-backdrop
+ background: #FFF
+.tippy-tooltip.honeybee-theme .tippy-content
+ color: black
+
+// видео фон
+
+.headhesive
+ left: 0
+ z-index: 100
+ min-height: 70px
+ transition: .5s
+ background:  linear-gradient(#006400 , lighten(#006400,10%))
+ position: fixed
+ width: 100%
+ z-index: 1000
+ transform: translateY(-1000%)
+ .subscribedrop
+  box-shadow: 0px 3px 10px 1px rgba(0,0,0,.5)
+  top: 59px
+  &::before
+   position: absolute
+   content: ""
+   display: block
+   top: 0
+   z-index: 0
+   left: 52px
+   border: 13px solid transparent
+   border-bottom-color: #fff
+   transform: translateY(-26px)
+   width: 1px
+   height: 1px
+ .searchdown
+  z-index: -10
+  top: 70.5px
+   box-shadow: 1px 4px 10px 1px rgba(0,0,0,.5)
+  form
+.headhesive--stick
+ transform: translateY(0)
+ a
+  color: white
+  &:hover
+   color: white
+ .nav-animate
+  &::before
+   background: ORANGE !important
+  &::after
+   background: DARKTURQUOISE !important
+
+
+
+.arrow-slide
+ width: 50px
+ height: 50px
+ position: absolute
+ bottom: 30px
+ left: 50%
+ transform: translateX(-50%);
+ &::before
+  background: #FFF
+  width: 20px
+  height: 3px
+  content: ""
+  display: block
+  transform: rotate(45deg)
+  position: absolute
+  top: 50%
+  left: 24%
+ &::after
+  left: 50%
+  top: 50%
+  transform: rotate(-45deg)
+  position: absolute
+  display: block
+  background: #FFF
+  width: 20px
+  height: 3px
+  content: ""
+ &:hover
+  cursor: pointer
+  bottom: 28px
+
+
+html
+ box-sizing: border-box
+ height: 100%
+body
+ z-index: -10
+ position: relative
+ height: 100%
+ margin: 0
+ font-family: 'PT Sans Caption',sans-serif
+//reset a
+a
+ color: #FFF
+ text-decoration: none
+ &:hover
+  text-decoration: none
+  color: #FFF
+
+// reset a
+
+// disqus
+
+.dis
+ background: url(../img/dust_scratches.png) no-repeat
+ background-size: cover
+ margin: 100px 0
+ position: relative
+ display: block
+ transition: transform  .3s
+ &:hover
+  transform: translateY(-10px)
+
+ .dis-activator
+  font-family: 'Azoft Sans'
+  padding: 20px
+  position: relative
+  &:hover
+   color: darkblue
+   transition: text-shadow .2s
+   text-shadow: 0px 0px 1px darkblue
+   cursor: pointer
+   &::before
+    opacity: 1
+  &::before
+   pointer-events: none
+   z-index: -10
+   content: ""
+   position: absolute
+   transition: opacity .3s
+   left: 5%
+   width: 90%
+   top: 110%
+   opacity: 0
+   display: block
+   height: 18px
+   background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, transparent 80%)
+ .dis-activator-disabled
+  &:hover
+   text-shadow: none
+   cursor: auto
+   color: black
+   &::before
+    opacity: 0
+ #disqus_thread
+  display: none
+  padding: 30px
+  position: relative
+  &::before
+   left: 20px
+   content: ""
+   position: absolute
+   bottom: 20px
+   transform: rotate(-2deg)
+   box-shadow: 0 20px 20px  rgba(119,119,119,.6);
+   width: 50%
+   height: 100px
+   display: block
+   z-index: -1000
+  &::after
+   content: ""
+   position: absolute
+   bottom: 20px
+   right: 20px
+   transform: rotate(2deg)
+   box-shadow: 0 20px 20px  rgba(119,119,119,.6);
+   width: 50%
+   height: 100px
+   display: block
+   z-index: -1000
+.dis-disabled
+ &:hover
+  transform: none
+
+// disqus
+.typed-cursor
+ color: #FFF
+
+// typed coursor
+
+
+
+
+
+header
+ position: relative
+ transition: .5s
+ font-size: 19px
+ display: flex
+ -webkit-justify-content: space-between
+ justify-content: space-between
+ z-index: 100000 !important
+ min-height: 100px
+ background: linear-gradient(#34495E , darken(#2C3E50 , 15%))
+ box-shadow: 0px 2px 10px rgba(0,0,0,1)
+ & .container
+  display: flex
+  -webkit-align-items: center
+  align-items: center
+  -webkit-justify-content: space-between
+  justify-content: space-between
+  .main-nav
+   font-size: 0px
+   &:last-child
+    display: flex
+    -webkit-justify-content: space-between
+    justify-content: space-between
+    width: 40%
+    div a
+     box-sizing: border-box
+     display: inline-block
+     padding: 10px 0px !important
+     margin-right: 0 !important
+     border-bottom: 2px solid transparent
+     &:hover
+      border-bottom: 2px solid ORANGE
+   &-brand
+    transition: .5s
+    padding: 0px !important
+    width: 70px !important
+    display: block
+    text-align: center
+    font-size: 27px
+    line-height: 1.7
+   display: flex
+   margin: 0
+   padding: 0
+   list-style: none
+   li
+    font-size: 20px
+    display: flex
+    -webkit-align-items: center
+    align-items: center
+    a
+     position: relative
+     display: block
+     padding: 10px 5px
+     margin-right: 15px
+     &[class="nav-animate"]
+      &::before
+       transition: .5s
+       content: ""
+       display: block
+       position: absolute
+       left: 0
+       bottom: 0
+       width: 20px
+       height: 3px
+       background: #E74C3C
+      &:hover::before
+       width: 50%
+       transform: translateX(100%)
+      &::after
+       transition: .5s
+       content: ""
+       display: block
+       position: absolute
+       right: 0
+       bottom: 0
+       width: 20px
+       height: 3px
+       background: #2980B9
+      &:hover::after
+       width: 50%
+       transform: translateX(-100%)
+
+
+//searchdown
+.searchdown
+ display: none
+ transition:top .5s
+ transform: translateX(-50%)
+ z-index: 1000
+ position: absolute
+ width: 50%
+ left: 50%
+ top: 100px
+ min-height: 50px
+ background: #FFF
+ box-shadow: 1px 1px 10px 5px rgba(0,0,0,.5)
+ text-indent: 20px
+ .found-search
+  height: 50px
+  line-height: 50px
+  display: none
+
+  a
+   color: black
+   &:hover
+    cursor: pointer
+    padding-bottom: 3px
+    border-bottom: 2px solid orange
+ .nav-search
+  height: 50px
+  display: flex
+  border-bottom: 1px solid black
+
+  .search
+   text-indent: 20px
+   flex: 5
+   border: none
+  .search-submit
+   overflow: hidden
+   font-weight: 700
+   cursor: pointer
+   border: none
+   background: black
+   flex: 1
+   color: #FFF
+   &:hover
+    & i
+     transform: translateX(10px)
+   &:focus
+    outline: none
+  .search-submit-active
+   animation: fadeText .5s
+   & i
+    opacity: 1
+    animation: moveRight .5s
+
+//subscribe
+
+.subscribedrop
+ display: none
+ border-radius: 4px
+ box-shadow: 0px 1px 10px 5px rgba(0,0,0,.5)
+ position: absolute
+ top: 77px
+ left: 0
+ background: rgba(255,255,255,.9)
+ border: 1px solid gray
+ width: 400px
+ min-height: 150px
+ &::before
+  position: absolute
+  content: ""
+  display: block
+  top: 0
+  z-index: 0
+  left: 44px
+  border: 20px solid transparent
+  border-bottom-color: #fff
+  transform: translateY(-40px)
+  width: 1px
+  height: 1px
+
+.subscribedrop-active
+ display: block
+ .subscribedrop-form
+  z-index: 1000
+  display: flex
+  flex-direction: column
+  width: 100%
+  height: 100%
+  padding: 15px
+  h3
+   z-index: 10
+   text-align: left
+   margin: 0 10px 10px 10px
+   font-size: 18px
+  label
+   z-index: 10
+   padding: 10px
+   position: relative
+   .subscribe-user
+    transition: .5s
+    z-index: 10
+    top: 30px
+    position: absolute
+   input
+    position: relative
+    background: transparent
+    padding: 10px
+    z-index: 100
+    width: 100%
+    font-size: 20px
+    border: 1px solid transparent
+    border-bottom: 1px solid black
+    box-sizing: border-box
+    &:focus
+     outline: none
+   span.span-active
+     font-size: 14px
+     transform: translateY(-150%)
+     color: MEDIUMVIOLETRED
+
+  button
+   z-index: 100
+   position: relative
+   border-radius: 5px
+   width: 70%
+   background: MIDNIGHTBLUE
+   color: #FFF
+   border: none
+   font-size: 23px
+   padding: 10px 30px 5px
+   margin: 20px 10px 15px 10px
+   box-shadow: 0px 6px darken(#191970,20%)
+   &:hover
+    box-shadow: 0px 4px darken(#191970,20%)
+    top: 2px
+    cursor: pointer
+   &:focus
+    outline: none
+   &:active
+    top: 6px
+    box-shadow: 0px 0px darken(#191970,20%)
+   &::before
+    margin-right: 15px
+    font-family: FontAwesome
+    content: "\f003"
+  .button-success
+   box-shadow: 0px 6px darken(#2E8B57,20%)
+   background: SEAGREEN
+   color: transparent
+   &::before
+    color: #FFF
+    content: "\f118"
+    font-family: $awesome
+   &::after
+    animation: moveTextUp .5s
+    position: absolute
+    left: 30%
+    color: #FFF
+    content: "Успешно"
+  .button-error
+   background: DARKRED
+   animation: shake .6s
+   color: transparent
+   &::before
+    color: #FFF
+    content: "\f11a"
+    font-family: $awesome
+   &::after
+    animation: scale .5s
+    position: absolute
+    left: 30%
+    color: #FFF
+    content: "Ошибка"
+//animation
+@keyframes scale
+ 0%
+  opacity: 0
+  transform: scale(0)
+ 100%
+  opacity: 1
+  transform: scale(1)
+
+
+@keyframes moveTextUp
+ 0%
+  opacity: 0
+  transform: translateY(50%)
+ 100%
+  opacity: 1
+  transform: translateY(0)
+
+@keyframes shake
+  0%, 100%
+   transform: translateX(0)
+  10%, 30%, 50%, 70%, 90%
+   transform: translateX(-10px)
+  20%, 40%, 60%, 80%
+   transform: translateX(10px)
+
+
+@keyframes fadeText
+ 0%
+  color: transparent
+ 80%
+  color: transparent
+ 100%
+  color: #FFF
+
+@keyframes moveRight
+ 10%
+   color: #FFF
+   transform: translateX(40%)
+ 20%
+   color: #FFF
+   transform: translateX(100%)
+ 30%
+   color: #FFF
+   transform: translateX(200%)
+ 60%
+   color: #FFF
+   opacity: 1
+   transform: translateX(300%)
+ 61%
+   color: #FFF
+   opacity: 1
+   transform: translateX(300%)
+ 62%
+   color: #FFF
+   opacity: 1
+   transform: translateX(300%)
+ 63%
+   color: #FFF
+   opacity: 1
+   transform: translateX(-650%)
+ 64%
+   color: #FFF
+   opacity: 1
+   transform: translateX(-650%)
+ 100%
+   opacity: 1
+   color: #FFF
+   transform: translateX(0%)
+
+
+//home-page
+#one
+ z-index: 10000
+ box-shadow: 0px 0px 10px  black
+ background: radial-gradient(white,black)
+ height: 100vh
+ position: relative
+ .about-down
+  box-shadow: 0px 0px 10px  black
+  position: relative
+  height: 100%
+  background: white
+  z-index: 100
+  padding-top: 150px
+  .arrow-slide
+   &::before
+    background: black
+   &::after
+    background: black
+  .facts-about
+   padding: 0 100px
+   .facts-about-down-desc
+    font-size: 30px
+   .facts-about-down-desc + .typed-cursor
+    color: black
+  .facts-animate
+   text-align: center
+   margin: 100px 0
+   font-size: 40px
+   p
+    margin: 20px auto
+    width: 200px
+    text-align: center
+    font-size: 17px
+
+#two
+ position: relative
+ #particles-js
+  position: absolute
+  left: 0
+  top: 0
+  right: 0
+  bottom: 0
+  z-index:  100
+ .home-page
+  main
+   text-align: justify
+   background: #FFF
+   padding-top: 100px
+   margin-top: -10px
+   z-index: 100
+   h3 , h4
+    text-align: center
+  aside
+   z-index: 1000
+   padding-left: 50px
+   .aside-wrapper
+
+    padding-top: 300px
+
+    .email-aside
+     box-shadow: 0 0 5px black;
+     background: black
+     width: 400px
+     height: 250px
+     position: relative
+     perspective: 500px;
+     perspective-origin: 50% 0;
+     transform-style: preserve-3d;
+     .email-convert-active
+      &::after
+       transform: rotateX(270deg)
+     .email-convert
+      z-index: 10
+      position: relative
+      width: 0
+      border-bottom: 250px solid #800080
+      border-left: 0px solid transparent
+      border-right: 400px solid transparent
+      &::before
+       z-index: 10
+       position: absolute;
+       top: 23px;
+       left: 176px;
+       content: "";
+       border-bottom: 200px solid darken(#800080,10%);
+       border-left: 125px solid transparent;
+       border-right: 118px solid transparent;
+       transform: rotate(-90deg);
+      &::after
+       z-index: 10
+       transform-origin: 0 0
+       transition: 1s
+       position: absolute;
+       content: "";
+       border-top: 121px solid navy;
+       border-left: 200px solid transparent;
+       border-right: 200px solid transparent;
+     .form-aside-active
+      transform: translate(-50% , -145%) !important
+     .form-aside
+      border-radius: 4px
+      z-index: -1
+      box-shadow: 0px 0px 10px black
+      transition: 2s transform 1s
+      align-items: center
+      display: flex
+      flex-direction: column
+      width: 90%
+      background: #FFF
+      position: absolute
+      left: 50%
+      top: 50%
+      transform: translate(-50%,-50%)
+      padding: 40px 10px 10px
+      .my-close
+       z-index: 10
+       display: block
+       margin-top: 5px
+       position: absolute
+       right: 8px
+       top: -3px
+       color: #95A5A6
+       &::after
+        content: none
+        display: block
+        position: absolute
+        transform: scale(0)
+        border: 1px solid black
+        left: 0
+        top: 0
+        right: 0
+        bottom: 0
+        margin: auto
+        width: 0
+        height: 0
+        border-radius: 50%
+       &:hover
+        cursor: pointer
+        color: black
+        &::after
+         transform: scale(2)
+
+      input
+       font-size: 22px
+       text-indent: 50px
+       border: 1px solid black
+       padding: 10px
+       border-radius: 10px
+       padding: 10px
+       width: 100%
+       &:focus
+        outline-style: none
+        box-shadow: 0px 0px 5px black
+      input + span
+       position: absolute
+       display: block
+       width: 60px
+       height: 100%
+       right: 0
+       top: 0
+       &::before
+        content: ""
+        display: block
+        position: absolute
+        right: 0
+        top: 0
+        bottom: 0
+        left: 0
+        margin: auto
+        width: 20px
+        height: 20px
+      label
+       position: relative
+       width: 90%
+      label
+       &::before
+        border-radius: 10px 0 0 10px
+        font-family: $awesome
+        content: "\f2c0"
+        display: block
+        padding: 10px
+        height: 100%
+        width: 50px
+        text-align: center
+        background: black
+        color: #FFF
+        position: absolute
+        left: 0
+        top: 0
+      label[for="subscribe-email"]
+       &::before
+        font-family: $awesome
+        content: "\f084"
+      label input:not(:focus):not(:hover):valid
+       background: #FFF
+       border: 1px solid green
+      label input:not(:focus):not(:hover):valid + span::before
+       content: "\f00c"
+       font-family: $awesome
+       text-align: center
+       line-height: 2.2
+       color: green
+      label input:not(:focus):not(:hover):invalid
+       background: #FFF
+       border: 1px solid red
+      label input:not(:focus):not(:hover):invalid + span::before
+       content: "\f00d"
+       font-family: $awesome
+       text-align: center
+       line-height: 20px
+       color: red
+      button
+       overflow: hidden
+       margin: 5px
+       padding: 10px 20px
+       background: transparent
+       border: 1px solid black
+       border-radius: 3px
+       position: relative
+       color: black
+       &::before
+        content: ""
+        display: block
+        position: absolute
+        left: 0
+        top: 0
+        bottom: 0
+        width: 0
+        background: black
+        transition: .5s
+       &::after
+        position: absolute
+        content: "Подписаться"
+        left: 0
+        top: 0
+        width: 100%
+        height: 100%
+        line-height: 2.2
+        color: transparent
+       &:focus
+        outline-style: none
+       &:hover
+        cursor: pointer
+        transition: color 1s
+        color: #FFF
+        &::before
+         z-index: -1
+         width: 100%
+      .button-submit-success
+       color: black !important
+       background: black !important
+       transition: background 1s
+       &::after
+        animation: 1s increase linear
+     .email-subscribe
+      border: none
+      user-select: none
+      box-shadow: 0px 6px darken(#8B0000,30%)
+      position: absolute
+      z-index: 100
+      left: -15px
+      top: 50%
+      transform: translateY(-50%)
+      padding: 10px
+      color: #FFF
+      border-radius: 0 5px 5px 5px
+      background: linear-gradient(45deg ,  #8B0000 , lighten(#8B0000 ,20%) )
+      &:hover
+       cursor: pointer
+       top: 51%
+       box-shadow: 0px 4px darken(#8B0000,10%)
+      &::before
+       z-index: -1
+       content: ""
+       top: -18px
+       left: 0
+       position: absolute
+       border-bottom: 18px solid #8B0000;
+       border-left: 18px solid transparent;
+       border-right: 0px solid transparent;
+
+
+@keyframes increase
+ 0%
+  transform: scale(0)
+  color: #FFF
+  opacity: 1
+ 90%
+  opacity: 1
+ 100%
+  color: #FFF
+  opacity: 0
+  transform: scale(2)
+
+ //footer
+
+footer
+ z-index: 1000
+ position: relative
+ background: #A9A9A9
+ min-height: 200px
+
+main
+ h1
+  font-size: 40px
+  text-align: center
+
+
+ // forest-in-vorscla
+.desc-forest-in-vorscla
+
+ main
+  background: #FFF
+  padding-right: 30px
+ p
+  text-align: justify
+
+
+
+
+
+//desc-ymskaya-step
+
+
+.desc-ymskaya-step
+ text-align: justify
+
+
+
+//blad-mountain
+
+.blad-mountain
+
+ h1
+  text-align: center
+  font-size: 40px
+ p
+  text-align: justify
+
+
+//beka-bor
+.beka-bor
+ p
+  text-align: justify
+
+
+//wall-high
+.wall-high
+ p
+  text-align: justify
+
+
+// ostras-yr
+
+.yr
+ p
+  text-align: justify
+
+
+//mail
+.mail-to-me
+ background: transparent
+ z-index: 100000
+ position: fixed
+ bottom: -525px
+ right: 15px
+ font-family: 'PT Sans Caption';
+ transition: bottom .5s
+ &:hover
+  cursor: pointer
+  bottom: -495px
+ .close-mail
+  transition: .6s opacity 1.5s
+  display: block
+  position: absolute
+  right: 10px
+  top: 10px
+  width: 30px
+  height: 30px
+  padding: 0 0 0 0
+  opacity: 0
+  &::before
+   transition: .6s transform .8s
+   position: absolute
+   top: 50%
+   left: 3px
+   content: ""
+   height: 2px
+   width: 25px
+   transform: rotate(0deg)
+   background: #FFF
+  &::after
+   transition: .6s transform .8s
+   position: absolute
+   top: 50%
+   left: 3px
+   content: ""
+   height: 2px
+   width: 25px
+   transform: rotate(0deg)
+   background: #FFF
+ .h-mail
+  position: relative
+  padding: 14px 0 4px
+  text-align: center
+  margin: 0 auto
+  width: 75%
+  border-radius: 10px 10px 0 0
+  font-family: 'Azoft Sans';
+  font-size: 20px
+  background: #16A085
+  color: #fff
+  .mail-desc
+   padding: 5px 5px 0
+   display: block
+   font-family: 'PT Sans Caption'
+   font-size: 13px
+   color: #fff
+ .submit-mail
+  background: #fff
+  border: 2px solid #16A085
+  padding: 20px 20px 30px
+  display: flex
+  flex-direction: column
+  .span-success
+   color: #16A085
+   font-size: 15px
+   font-weight: bold
+   margin-top: 10px
+  .span-error
+   color: #C0392B
+   font-size: 15px
+   font-weight: bold
+   margin-top: 10px
+  textarea
+   color:  #343A40
+   font-size: 15px
+   padding: 10px
+   border-radius: 5
+   min-width: 100px
+   max-height: 200px
+   min-height: 200px
+   border: 1px solid rgba(0,0,0,.05);
+   box-shadow: inset 0px 5px 7px rgba(0,0,0,.05)
+   &:focus
+    outline-style: none
+    border: 1px solid #16A085
+    box-shadow: inset 0px 2px 5px rgba(0,0,0,.05) ,  0px 0px 5px #16A085
+  label
+   font-size: 12px
+   input
+    text-indent: 20px
+    color: #343A40
+    border: 1px solid  rgba(0,0,0,.05);
+    border-radius: 5px
+    height: 55px
+    box-shadow: inset 0px 5px 7px rgba(0,0,0,.05)
+    width: 100%
+    font-size: 20px
+    &:focus
+     outline-style: none
+     border: 1px solid #16A085
+     box-shadow: inset 0px 2px 5px rgba(0,0,0,.05) ,  0px 0px 5px #16A085
+  button
+   border-radius: 5px
+   margin-top: 30px
+   width: 60%
+   padding: 10px
+   background: #16A085
+   color: #fff
+   border: none
+   box-shadow: 0px 6px 0px darken(#16A085,10%)
+   &:hover
+    cursor: pointer
+    transform: translateY(2px)
+    box-shadow: 0px 4px 0px darken(#16A085,10%)
+   &:focus
+    outline-style: none
+   &:active
+    transform: translateY(6px)
+    box-shadow: 0px 0px 0px darken(#16A085,10%) , inset  0px 4px 0px darken(#16A085,10%)
+   &::before
+    display: inline-block
+    font-family: $awesome
+    content: "\f0e0"
+    margin-right: 20px
+.mail-to-me-up
+ bottom: -10px
+ &:hover
+  cursor: auto
+  bottom: -10px
+ .close-mail
+  opacity: 1
+  transition: 1s opacity .5s
+  display: block
+  position: absolute
+  right: 10px
+  top: 10px
+  width: 30px
+  height: 30px
+  padding: 0 0 0 0
+  &:hover
+   cursor: pointer
+  &::before
+   transition: .6s transform 1.5s
+   position: absolute
+   top: 50%
+   left: 3px
+   content: ""
+   height: 2px
+   width: 25px
+   transform: rotate(45deg)
+   background: #FFF
+  &::after
+   transition: .6s transform 1.5s
+   position: absolute
+   top: 50%
+   left: 3px
+   content: ""
+   height: 2px
+   width: 25px
+   transform: rotate(-45deg)
+   background: #FFF
+
+
+
+
+
+.submit-mail-button-success
+ &::before
+  animation: 1.5s increaseText 1s linear
+
+
+@keyframes  increaseText
+ 0%
+  opacity: 1
+  transform: scale(1)
+
+ 80%
+  opacity: 0
+ 100%
+  opacity: 0
+  transform: scale(3)
+
+
+
+
+@import "media"
