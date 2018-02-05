@@ -4,10 +4,11 @@
  .video-container .filter
   font-size: 40px
  .mail-to-me
-  bottom: -425px
+  bottom: -435px
   &:hover
    bottom: -390px
   .submit-mail
+   height: 390px
    textarea
     max-height: 100px !important
     min-height: 100px !important
@@ -88,6 +89,66 @@
 
 
 @media screen and (max-width: 768px)
+ header
+  .container
+   .main-nav
+    li
+     a
+      &.nav-animate
+       display: none
+      &.main-nav-brand
+       height: 70px
+       width: 70px
+       padding: 0
+       background:
+       position: relative
+       &::before
+        content: ""
+        display: block
+        position: absolute
+        top: 35%
+        left: 50%
+        width: 30px
+        height: 3px
+        background: #FFF
+        transform: translate(-50%,-50%)
+        transform-origin: 50% 50%
+       &::after
+        transform-origin: 50% 50%
+        content: ""
+        display: block
+        position: absolute
+        top: 65%
+        left: 50%
+        width: 30px
+        height: 3px
+        background: #FFF
+        transform: translate(-50%,-50%)
+       &:hover
+        cursor: pointer
+       .main-nav-brand-span
+        opacity: 1
+        display: block
+        position: absolute
+        top: 50%
+        left: 50%
+        width: 30px
+        height: 3px
+        background: #FFF
+        transform: translate(-50%,-50%)
+       i
+        display: none
+      &.main-nav-brand-active
+       &::before
+        top: 65%
+        transform: rotate(45deg)
+       &::after
+        top: 35%
+        bottom: 0
+        transform: rotate(-45deg)
+       .main-nav-brand-span
+        opacity: 0
+
  #two
   .nav-main
    display: none

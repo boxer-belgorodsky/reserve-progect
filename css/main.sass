@@ -279,12 +279,14 @@ header
       border-bottom: 2px solid ORANGE
    &-brand
     transition: .5s
-    padding: 0px !important
-    width: 70px !important
+    padding: 0px
+    width: 70px
     display: block
     text-align: center
     font-size: 27px
     line-height: 1.7
+    &-span
+     opacity: 0
    display: flex
    margin: 0
    padding: 0
@@ -966,7 +968,7 @@ main
  background: transparent
  z-index: 100000
  position: fixed
- bottom: -525px
+ bottom: -545px
  right: 15px
  font-family: 'PT Sans Caption';
  transition: bottom .5s
@@ -1015,12 +1017,13 @@ main
   background: #16A085
   color: #fff
   .mail-desc
-   padding: 15px 5px 0
+   padding: 15px 5px 10px
    display: block
    font-family: 'PT Sans Caption'
    font-size: 13px
    color: #fff
  .submit-mail
+  height: 500px
   background: #fff
   border: 2px solid #16A085
   padding: 20px 20px 30px

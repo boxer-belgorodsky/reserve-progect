@@ -338,12 +338,14 @@ header {
         -webkit-transition: .5s;
         -o-transition: .5s;
         transition: .5s;
-        padding: 0px !important;
-        width: 70px !important;
+        padding: 0px;
+        width: 70px;
         display: block;
         text-align: center;
         font-size: 27px;
         line-height: 1.7; }
+        header .container .main-nav-brand-span {
+          opacity: 0; }
       header .container .main-nav li {
         font-size: 20px;
         display: -webkit-box;
@@ -1184,7 +1186,7 @@ main h1 {
   background: transparent;
   z-index: 100000;
   position: fixed;
-  bottom: -525px;
+  bottom: -545px;
   right: 15px;
   font-family: 'PT Sans Caption';
   -webkit-transition: bottom .5s;
@@ -1245,12 +1247,13 @@ main h1 {
     background: #16A085;
     color: #fff; }
     .mail-to-me .h-mail .mail-desc {
-      padding: 15px 5px 0;
+      padding: 15px 5px 10px;
       display: block;
       font-family: 'PT Sans Caption';
       font-size: 13px;
       color: #fff; }
   .mail-to-me .submit-mail {
+    height: 500px;
     background: #fff;
     border: 2px solid #16A085;
     padding: 20px 20px 30px;
@@ -1452,12 +1455,14 @@ main h1 {
   .video-container .filter {
     font-size: 40px; }
   .mail-to-me {
-    bottom: -425px; }
+    bottom: -435px; }
     .mail-to-me:hover {
       bottom: -390px; }
-    .mail-to-me .submit-mail textarea {
-      max-height: 100px !important;
-      min-height: 100px !important; }
+    .mail-to-me .submit-mail {
+      height: 390px; }
+      .mail-to-me .submit-mail textarea {
+        max-height: 100px !important;
+        min-height: 100px !important; }
   .mail-to-me-up {
     bottom: -10px; }
     .mail-to-me-up:hover {
@@ -1516,6 +1521,72 @@ main h1 {
       font-size: 20px; } }
 
 @media screen and (max-width: 768px) {
+  header .container .main-nav li a.nav-animate {
+    display: none; }
+  header .container .main-nav li a.main-nav-brand {
+    height: 70px;
+    width: 70px;
+    padding: 0;
+    position: relative; }
+    header .container .main-nav li a.main-nav-brand::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 35%;
+      left: 50%;
+      width: 30px;
+      height: 3px;
+      background: #FFF;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      -webkit-transform-origin: 50% 50%;
+      -ms-transform-origin: 50% 50%;
+      transform-origin: 50% 50%; }
+    header .container .main-nav li a.main-nav-brand::after {
+      -webkit-transform-origin: 50% 50%;
+      -ms-transform-origin: 50% 50%;
+      transform-origin: 50% 50%;
+      content: "";
+      display: block;
+      position: absolute;
+      top: 65%;
+      left: 50%;
+      width: 30px;
+      height: 3px;
+      background: #FFF;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%); }
+    header .container .main-nav li a.main-nav-brand:hover {
+      cursor: pointer; }
+    header .container .main-nav li a.main-nav-brand .main-nav-brand-span {
+      opacity: 1;
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 30px;
+      height: 3px;
+      background: #FFF;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%); }
+    header .container .main-nav li a.main-nav-brand i {
+      display: none; }
+  header .container .main-nav li a.main-nav-brand-active::before {
+    top: 65%;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg); }
+  header .container .main-nav li a.main-nav-brand-active::after {
+    top: 35%;
+    bottom: 0;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg); }
+  header .container .main-nav li a.main-nav-brand-active .main-nav-brand-span {
+    opacity: 0; }
   #two .nav-main {
     display: none; }
   #one .arrow-slide {

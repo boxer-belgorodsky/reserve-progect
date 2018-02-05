@@ -7,6 +7,7 @@
   <link rel="stylesheet" type="text/css" href="css/animate.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
   <link rel="stylesheet" type="text/css" href="css/slick.css">
   <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
   <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css">
@@ -29,7 +30,7 @@
   <div class="container">
     <ul class="main-nav">
       <li>
-        <a class="main-nav-brand" href=""><i class="fa fa-ravelry"></i></a>
+        <a class="main-nav-brand main-nav-brand-active" href=""><span class="main-nav-brand-span"></span><i class="fa fa-ravelry"></i></a>
       </li>
       <li>
         <a class="nav-animate" href="index.php">Главная</a>

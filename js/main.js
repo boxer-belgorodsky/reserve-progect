@@ -127,10 +127,14 @@ function countNavLeave(event){
 
 for (var i = 0 ; i < mainNav.length ; i++) {
     mainNav[i].addEventListener("mouseenter" , function(){
+   if(document.documentElement.clientWidth > 768){
     countNav(event);
+  }
   });
      mainNav[i].addEventListener("mouseleave" , function(){
+    if(document.documentElement.clientWidth > 768){
     countNavLeave(event);
+    }
   });
 }
 
@@ -268,7 +272,13 @@ $(".subscribedrop-form input").on("blur" , function(event){
 
 //submit subscribe
 var x = 0;
+
+
 $(".subscribedrop-form").submit(function(){
+   var subscribeName_one = document.querySelectorAll(".subscribe-name")[0].value,
+      subscribeEmail_one = document.querySelectorAll(".subscribe-email")[0].value,
+      subscribeName_two  = document.querySelectorAll(".subscribe-name")[1].value,
+      subscribeEmail_two = document.querySelectorAll(".subscribe-email")[1].value;
    console.log(/@/.test(this.querySelectorAll("input")[1].value));
    if(this.querySelectorAll("input")[0].value == "" || this.querySelectorAll("input")[1].value == "" || !(/.+@.+\..+/i.test(this.querySelectorAll("input")[1].value))){
     x = 1;
@@ -277,10 +287,10 @@ $(".subscribedrop-form").submit(function(){
     x = 0;
 
     $.ajax({
+      url: "subscribe.php",
       type: "POST",
-      url: "index.php",
-      data: $(this).serialize()
-    }).done(function(){
+      data: {nameOne:subscribeName_one,emailOne:subscribeEmail_one ,nameTwo:subscribeName_two,emailTwo:subscribeEmail_two}
+    }).done(function(data){
 
        if(x == 1){
          $(".subscribedrop-form button").addClass('button-error');
@@ -304,14 +314,34 @@ $(".subscribedrop-form").submit(function(){
 var scribe = document.getElementsByClassName("nav-animate")[2];
 
 scribe.addEventListener("click" , function() {
+
+var    subscribeName_one = document.querySelectorAll(".subscribe-name")[0],
+      subscribeEmail_one = document.querySelectorAll(".subscribe-email")[0];
+
+
+
+
  if(scribe.nextSibling.className == "subscribedrop") scribe.nextSibling.className = "subscribedrop subscribedrop-active"
- else scribe.nextSibling.className = "subscribedrop"
+ else {
+  scribe.nextSibling.className = "subscribedrop";
+  subscribeName_one.value = "";
+  subscribeEmail_one.value = "";
+  }
 });
 var scribe2 = document.getElementsByClassName("nav-animate")[5];
 
 scribe2.addEventListener("click" , function() {
+
+var   subscribeName_two  = document.querySelectorAll(".subscribe-name")[1],
+      subscribeEmail_two = document.querySelectorAll(".subscribe-email")[1];
+
+
  if(scribe2.nextSibling.className == "subscribedrop") scribe2.nextSibling.className = "subscribedrop subscribedrop-active"
- else scribe2.nextSibling.className = "subscribedrop"
+ else {
+  scribe2.nextSibling.className = "subscribedrop";
+  subscribeName_two.value = "";
+  subscribeEmail_two.value = "";
+  }
 });
 
 
