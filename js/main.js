@@ -86,9 +86,19 @@ if(x == 0){
 
 //disqus
 
-var crest = document.querySelector(".main-nav-brand");
+var crest = document.querySelectorAll(".main-nav-brand")[0],
+    crest2 = document.querySelectorAll(".main-nav-brand")[1];
 
 $(crest).on("click" , function(e){
+
+ if ( document.documentElement.clientWidth < 768){
+     e.preventDefault();
+    $(this).toggleClass("main-nav-brand-active");
+ }
+
+});
+
+$(crest2).on("click" , function(e){
 
  if ( document.documentElement.clientWidth < 768){
      e.preventDefault();
@@ -247,7 +257,8 @@ function count(){
 
     });
    }
-if(document.querySelector('#one')){
+if(document.documentElement.className = "active-html js"){
+  if(document.querySelector('#one')){
  document.querySelector("body").addEventListener("wheel" , function(event){
 
      if(event.deltaY > 0 && pageYOffset < document.documentElement.clientHeight){
@@ -268,6 +279,7 @@ if(document.querySelector('#one')){
                });
           }
     });
+ }
 }
 
 $(".subscribedrop-form input").on("focus" , function(event){
@@ -387,17 +399,19 @@ if(document.documentElement.clientWidth > 992){
 
   })
 }
-if(document.querySelector(".header-take")){
- var typed = new Typed('.header-take', {
-   stringsElement: '.header-desc',
-   typeSpeed: 50,
-   startDelay:1500,
-   backDelay:100000000,
-   backSpeed: 60,
-   loop:true,
-   loopCount: Infinity
- });
-}
+setTimeout(function(){
+    if(document.querySelector(".header-take")){
+   var typed = new Typed('.header-take', {
+     stringsElement: '.header-desc',
+     typeSpeed: 50,
+     startDelay:1500,
+     backDelay:100000000,
+     backSpeed: 60,
+     loop:true,
+     loopCount: Infinity
+   });
+  }
+},1500);
 
 
 // submit convert
@@ -608,4 +622,16 @@ if(document.querySelector(".header-take"))
  var remove = document.getElementsByClassName("header-desc")[0].lastChild.remove();
 
 
+    setTimeout(function(){
+     $(".preloader-wrapper").addClass("preloader-wrapper-load");
+    },1000)
+    setTimeout(function(){
+     document.documentElement.className = "active-html js";
+
+    },3000);
 });
+
+
+
+
+
