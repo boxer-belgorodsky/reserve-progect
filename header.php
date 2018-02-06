@@ -30,7 +30,7 @@
   <div class="container">
     <ul class="main-nav">
       <li>
-        <a class="main-nav-brand main-nav-brand-active" href=""><span class="main-nav-brand-span"></span><i class="fa fa-ravelry"></i></a>
+        <a class="main-nav-brand" href=""><span class="main-nav-brand-span"></span><i class="fa fa-ravelry"></i></a>
       </li>
       <li>
         <a class="nav-animate" href="index.php">Главная</a>

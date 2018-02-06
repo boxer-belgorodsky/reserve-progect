@@ -1524,11 +1524,14 @@ main h1 {
   header .container .main-nav li a.nav-animate {
     display: none; }
   header .container .main-nav li a.main-nav-brand {
-    height: 70px;
-    width: 70px;
+    height: 50px;
+    width: 50px;
     padding: 0;
     position: relative; }
     header .container .main-nav li a.main-nav-brand::before {
+      -webkit-transition: .5s transform , .5s top .7s;
+      -o-transition: .5s transform , .5s top .7s;
+      transition: .5s transform , .5s top .7s;
       content: "";
       display: block;
       position: absolute;
@@ -1536,17 +1539,11 @@ main h1 {
       left: 50%;
       width: 30px;
       height: 3px;
-      background: #FFF;
-      -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
-      -webkit-transform-origin: 50% 50%;
-      -ms-transform-origin: 50% 50%;
-      transform-origin: 50% 50%; }
+      background: #FFF; }
     header .container .main-nav li a.main-nav-brand::after {
-      -webkit-transform-origin: 50% 50%;
-      -ms-transform-origin: 50% 50%;
-      transform-origin: 50% 50%;
+      -webkit-transition: .5s transform , .5s top .7s;
+      -o-transition: .5s transform , .5s top .7s;
+      transition: .5s transform , .5s top .7s;
       content: "";
       display: block;
       position: absolute;
@@ -1554,13 +1551,13 @@ main h1 {
       left: 50%;
       width: 30px;
       height: 3px;
-      background: #FFF;
-      -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%); }
+      background: #FFF; }
     header .container .main-nav li a.main-nav-brand:hover {
       cursor: pointer; }
     header .container .main-nav li a.main-nav-brand .main-nav-brand-span {
+      -webkit-transition: .2s opacity .3s;
+      -o-transition: .2s opacity .3s;
+      transition: .2s opacity .3s;
       opacity: 1;
       display: block;
       position: absolute;
@@ -1568,20 +1565,24 @@ main h1 {
       left: 50%;
       width: 30px;
       height: 3px;
-      background: #FFF;
-      -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%); }
+      background: #FFF; }
     header .container .main-nav li a.main-nav-brand i {
       display: none; }
   header .container .main-nav li a.main-nav-brand-active::before {
-    top: 65%;
+    -webkit-transition: .5s transform .7s , .3s top;
+    -o-transition: .5s transform .7s , .3s top;
+    transition: .5s transform .7s , .3s top;
+    left: 50%;
+    top: 50%;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg); }
   header .container .main-nav li a.main-nav-brand-active::after {
-    top: 35%;
-    bottom: 0;
+    -webkit-transition: .5s transform .7s , .3s top;
+    -o-transition: .5s transform .7s , .3s top;
+    transition: .5s transform .7s , .3s top;
+    left: 50%;
+    top: 50%;
     -webkit-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
     transform: rotate(-45deg); }

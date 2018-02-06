@@ -97,12 +97,13 @@
       &.nav-animate
        display: none
       &.main-nav-brand
-       height: 70px
-       width: 70px
+       height: 50px
+       width: 50px
        padding: 0
        background:
        position: relative
        &::before
+        transition: .5s transform , .5s top .7s
         content: ""
         display: block
         position: absolute
@@ -111,10 +112,8 @@
         width: 30px
         height: 3px
         background: #FFF
-        transform: translate(-50%,-50%)
-        transform-origin: 50% 50%
        &::after
-        transform-origin: 50% 50%
+        transition: .5s transform , .5s top .7s
         content: ""
         display: block
         position: absolute
@@ -123,10 +122,10 @@
         width: 30px
         height: 3px
         background: #FFF
-        transform: translate(-50%,-50%)
        &:hover
         cursor: pointer
        .main-nav-brand-span
+        transition:  .2s opacity .3s
         opacity: 1
         display: block
         position: absolute
@@ -135,16 +134,18 @@
         width: 30px
         height: 3px
         background: #FFF
-        transform: translate(-50%,-50%)
        i
         display: none
       &.main-nav-brand-active
        &::before
-        top: 65%
+        transition: .5s transform .7s , .3s top
+        left: 50%
+        top: 50%
         transform: rotate(45deg)
        &::after
-        top: 35%
-        bottom: 0
+        transition: .5s transform .7s , .3s top
+        left: 50%
+        top: 50%
         transform: rotate(-45deg)
        .main-nav-brand-span
         opacity: 0

@@ -86,6 +86,16 @@ if(x == 0){
 
 //disqus
 
+var crest = document.querySelector(".main-nav-brand");
+
+$(crest).on("click" , function(e){
+
+ if ( document.documentElement.clientWidth < 768){
+     e.preventDefault();
+    $(this).toggleClass("main-nav-brand-active");
+ }
+
+});
 
 var mainNav = document.querySelectorAll(".main-nav li > a");
 
