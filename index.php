@@ -124,13 +124,13 @@ require_once "header.php";
        </p>
        <div class="slick">
          <div class="slick-item">
-          <a data-fancybox="gallery" href="img/backgroud-disqus.jpg"><img src="img/backgroud-disqus.jpg"></a>
-          <h1>описание</h1>
+          <a data-fancybox="gallery" href="img/belgor/bridge-for-river.png"><img src="img/belgor/bridge-for-river.png"><h1>описание</h1></a>
+
          </div>
-         <div class="slick-item"><a data-fancybox="gallery" href="img/dust_scratches.png"><img src="img/dust_scratches.png"></a></div>
-         <div class="slick-item"><a data-fancybox="gallery" href="img/belgor/bel-mountain.jpg"><img src="img/belgor/bel-mountain.jpg"></a></div>
-         <div class="slick-item"><a data-fancybox="gallery" href="img/belgor/maxresdefault.jpg"><img src="img/belgor/maxresdefault.jpg"></a></div>
-         <div class="slick-item"><a data-fancybox="gallery" href="img/belgor/mega-grinn.jpg"><img src="img/belgor/mega-grinn.jpg"></a></div>
+         <div class="slick-item"><a data-fancybox="gallery" href="img/belgor/zerkov.png"><img src="img/belgor/zerkov.png"><h1>описание</h1></a></div>
+         <div class="slick-item"><a data-fancybox="gallery" href="img/belgor/hotmuh-very-beauty.png"><img src="img/belgor/hotmuh-very-beauty.png"><h1>описание</h1></a></div>
+         <div class="slick-item"><a data-fancybox="gallery" href="img/belgor/arhangel.png"><img src="img/belgor/arhangel.png"><h1>описание</h1></a></div>
+         <div class="slick-item"><a data-fancybox="gallery" href="img/belgor/park-key.png"><img src="img/belgor/park-key.png"><h1>описание</h1></a></div>
        </div>
      </main>
      <?php  require_once "aside.php" ; ?>
@@ -154,6 +154,11 @@ require_once "header.php";
    <textarea placeholder="Ваше сообщение" required></textarea>
    <button type="submit">Отправить</button>
  </form>
+</div>
+
+
+<div class="sidenav">
+  <nav></nav>
 </div>
 
 

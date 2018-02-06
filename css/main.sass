@@ -1155,25 +1155,60 @@ main
   opacity: 0
   transform: scale(3)
 
+.slick-prev
+ left: 0
+ width: 60px !important
+ height: 100% !important
+ background: rgba(255,255,255,.3)
+ z-index: 100
+ &:hover
+  background: rgba(255,255,255,.6)
+ &:focus
+  background: rgba(255,255,255,.9)
+.slick-next
+ right: 0
+ width: 60px !important
+ height: 100% !important
+ background: rgba(255,255,255,.3)
+ z-index: 100
+ &:hover
+  background: rgba(255,255,255,.6)
+ &:focus
+  background: rgba(255,255,255,.9)
+
+
 .slick
  &-item
   height: 500px
   position: relative
-  h1
-   left: 0
-   bottom: 0
-   text-align: center
-   background: rgba(0,0,0,.7)
-   width: 100%
-   height: 100px
-   line-height: 100px
-   color: #FFF
-   position: absolute
   a
    height: 500px
    width: 100%
+   h1
+    transition: .8s
+    transform: translateY(100%)
+    margin: 0
+    left: 0
+    bottom: 0
+    text-align: center
+    background: rgba(0,0,0,.7)
+    width: 100%
+    min-height: 100px
+    line-height: 100px
+    color: #FFF
+    position: absolute
+    &:hover
+     transform: translateY(0)
    img
-    max-width: 100%
+    overflow: hidden
+    transition: .8s
+    width: 100%
+    &:hover
+     transform: scale(1.5) rotate(-15deg)
+     filter: grayscale(.75)
+    &:hover + h1
+     transform: translateY(0)
+
 
 
 .slick-next
@@ -1240,12 +1275,12 @@ main
   z-index: 100000000
   position: absolute
   animation: 1.5s fade  infinite linear
-  top: 35%
+  top: 30%
   color: #FFF
   font-size: 40px
   font-family: 'Azoft Sans';
   left: 50%
-  transform: translate(-50% , -50%)
+  transform: translateX(-50% )
 .preloader-wrapper-load
  transition: .5s z-index 2s
  z-index: -100
@@ -1263,6 +1298,9 @@ main
   transition: .5s
   animation: none
 
+
+.sidenav
+ display: none
 
 @keyframes spinner
  0%
