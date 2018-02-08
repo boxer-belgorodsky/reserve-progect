@@ -6,6 +6,7 @@
 
 
 <?php
+$title = "Сайт про Белгород";
 require_once "header.php";
 
 
@@ -162,10 +163,10 @@ require_once "header.php";
 </div>
 
 
-<div class="preloader-wrapper">
+<!-- <div class="preloader-wrapper">
   <div class="preloader"></div>
   <div class="preloader-desc">Loading...</div>
-</div>
+</div> -->
 
 
 <?php

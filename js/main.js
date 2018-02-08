@@ -615,6 +615,38 @@ $(".slick").slick({
   slidesToShow: 1
 });
 
+var len = document.querySelectorAll("svg");
+
+var lenh5 = document.querySelectorAll(".portfolio-item h5");
+
+portfolio.onclick =  function(){
+
+$(".portfolio-item").css("display" , "flex");
+
+
+  for (var i = 0 ; i < len.length ; i++){
+
+
+setTimeout(function(i){
+
+ return function(){
+         lenh5[i].style.display = "block";
+         lenh5[i].classList.add("animated");
+         lenh5[i].classList.add("slideInLeft");
+         len[i].style.display = "block";
+         len[i].classList.add("animated");
+         len[i].classList.add("slideInLeft");
+
+   }
+
+ }(i),1000 * i);
+
+}
+
+
+}
+
+
 
 
 if(document.querySelector(".header-take"))

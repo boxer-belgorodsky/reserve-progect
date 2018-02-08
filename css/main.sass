@@ -1302,6 +1302,80 @@ main
 .sidenav
  display: none
 
+footer
+ .container
+  display: flex
+  .list-reserve-wrapper
+   width: 30%
+   justify-content: flex-end
+   .link-active-reserve
+    margin-left: auto
+    display: flex
+    margin-top: 60px
+    padding: 20px
+    color: rgba(255,255,255,.7)
+    border: 2px solid  gray
+    width: 70%
+    text-align: center
+    background: #4B0082
+
+  .portfolio-wrapper
+   width: 70%
+   .link-active-portfolio
+    display: flex
+    margin-top: 60px
+    padding: 20px
+    color: rgba(255,255,255,.7)
+    border: 2px solid  gray
+    width: 30%
+    text-align: center
+    background: #4B0082
+   .portfolio-wrapper-item
+    margin: 40px
+    display: flex
+    .portfolio-item
+     flex-direction: column
+     display: flex
+     align-items: center
+     width: 25%
+     svg
+      display: none
+     h5
+      display: none
+      text-align: center
+      color: #FFF
+
+.active-crest
+ width: 20px
+ height: 20px
+ display: block
+ margin-left: auto
+ position: relative
+ &::before
+  left: 0
+  top: 0
+  right: 0
+  bottom: 0
+  margin: auto
+  position: absolute
+  width: 20px
+  height: 3px
+  background: #FFF
+  content: ""
+ &::after
+  left: 0
+  top: 0
+  right: 0
+  bottom: 0
+  margin: auto
+  position: absolute
+  width: 20px
+  height: 3px
+  background: #FFF
+  content: ""
+  transform: rotate(90deg)
+
+
 @keyframes spinner
  0%
   transform: rotate(0deg)

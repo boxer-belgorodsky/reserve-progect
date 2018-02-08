@@ -1,4 +1,5 @@
 <?php
+$title = "Бекарюковский бор";
 require_once "header.php";
 
 ?>

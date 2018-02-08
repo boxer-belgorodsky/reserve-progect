@@ -1,4 +1,5 @@
 <?php
+$title = "Стенки Изгорья";
 require_once "header.php";
 
 ?>
