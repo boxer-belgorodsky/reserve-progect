@@ -8,12 +8,13 @@ div[style*="text-align: right"] > a[target="_blank"]
  display: none
 
 .homepage-hero-module
+
   position: absolute
   z-index: 100
   border-right: none;
   border-left: none;
   position: relative;
-  height: calc(100% - 100px)
+  height: 100%
 
 .no-video .video-container video,
 .touch .video-container video
@@ -51,6 +52,7 @@ div[style*="text-align: right"] > a[target="_blank"]
   font-size: 50px
 
 .video-container video
+  filter: blur(3px)
   position: absolute;
   z-index: 0;
   bottom: 0;
@@ -244,11 +246,17 @@ a
 // disqus
 .typed-cursor
  color: #FFF
+ animation: 1s opac infinite linear
 
 // typed coursor
 
-
-
+@keyframes opac
+ 0%
+  opacity: 0
+ 50%
+  opacity: 1
+ 100%
+  opacity: 0
 
 
 header
@@ -1306,9 +1314,10 @@ footer
  .container
   display: flex
   .list-reserve-wrapper
-   width: 30%
+   width: 35%
    justify-content: flex-end
    .link-active-reserve
+    position: relative
     margin-left: auto
     display: flex
     margin-top: 60px
@@ -1318,16 +1327,60 @@ footer
     width: 70%
     text-align: center
     background: #4B0082
+   a
+    overflow: hidden
+    display: none
+    position: relative
+    margin-left: auto
+    margin-top: 40px
+    padding: 20px 10px
+    color: rgba(255,255,255,.7)
+    border: 2px solid  gray
+    width: 70%
+    text-align: center
+    background: #4B0082
+    &:hover
+     span
+      transform: translateX(100%)
+     &::before
+      right: 0
+      left: 0
+
+    span
+     transition: .5s
+     display: block
+    &::before
+     transition: .5s
+     font-family: $awesome
+     position: absolute
+     content: "\f061"
+     width: 30px
+     height: 30px
+     left: -100%
+     font-size: 25px
+     top: 0
+     bottom: 0
+     right: 100%
+     margin: auto
+     text-align: center
+     line-height: 30px
+
+
+
+   a:last-child
+    margin-bottom: 50px
 
   .portfolio-wrapper
-   width: 70%
+   position: relative
+   width: 65%
    .link-active-portfolio
+    position: relative
     display: flex
     margin-top: 60px
     padding: 20px
     color: rgba(255,255,255,.7)
     border: 2px solid  gray
-    width: 30%
+    width: 50%
     text-align: center
     background: #4B0082
    .portfolio-wrapper-item
@@ -1349,8 +1402,11 @@ footer
  width: 20px
  height: 20px
  display: block
- margin-left: auto
- position: relative
+ margin: auto
+ position: absolute
+ top: 0
+ bottom: 0
+ right: 35px
  &::before
   left: 0
   top: 0
@@ -1374,7 +1430,86 @@ footer
   background: #FFF
   content: ""
   transform: rotate(90deg)
+.active-crest-one
+ opacity: 0
+ transition: .5s opacity 2s
+ animation: 3s crestRotate ease-in
+.active-crest-two
+ animation: 1.5s crestRotate ease-in
+ &::after
+  transform: rotate(0)
+  transition: .5s transform 1s
 
+
+@keyframes crestRotate
+ 100%
+
+  transform: rotate(-3600deg)
+
+
+.my-photo-wrapper
+ display: flex
+ height: 0
+ justify-content: center
+ width: 100%
+ margin-top: 180px
+ perspective: 1000px
+ perspective-origin: 50% 0
+ .my-photo
+  box-shadow: 0px 0px 10px black
+  transition: 1s transform 1.5s
+  width: 120px
+  height: 120px
+  border-radius: 50%
+  transform-origin: 0  0
+  display: block
+  background:  url(../img/school.jpg) no-repeat
+  transform: rotate(-90deg) rotateY(90deg)
+  background-position-x: -35px
+  background-size: cover
+  position: relative
+  overflow: hidden
+  &:hover
+   &::before
+    width: 100%
+   a
+    opacity: 1
+    transform: scale(1.5)  rotate(90deg)
+  &::before
+   transition: width .5s
+   content: ""
+   position: absolute
+   height: 100%
+   width: 0
+   background: rgba(0,0,0,.5)
+  a
+   opacity: 0
+   display: block
+   transition: .5s
+   color: #FFF
+   font-size: 35px
+   background: transparent
+   position: absolute
+   left: 0
+   right: 0
+   top: 0
+   bottom: 0
+   margin: auto
+   text-align: center
+   line-height: 50px
+   width: 50px
+   height: 50px
+   transform: scale(4) rotate(90deg)
+  &-active
+   transform: rotate(-90deg) rotateY(0deg)
+
+#port
+ position: absolute
+ width: 50%
+ left: 0
+ height: 120px
+ top: 40px
+ z-index: 10000
 
 @keyframes spinner
  0%

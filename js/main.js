@@ -615,31 +615,105 @@ $(".slick").slick({
   slidesToShow: 1
 });
 
-var len = document.querySelectorAll("svg");
+var i = 0 ;
+
+var linkReserve = document.querySelectorAll(".list-reserve-wrapper a");
+
+$(".link-active-reserve").on("click" , function(){
+
+document.querySelectorAll(".active-crest")[1].classList.toggle("active-crest-two");
+if(document.querySelectorAll(".active-crest")[1].classList.contains('active-crest-two')){
+  for( i = 0 ; i < linkReserve.length ; i++){
+
+   setTimeout(function(i){
+    return function(){
+
+      linkReserve[i].style.display = "block";
+      linkReserve[i].classList.add("animated");
+      linkReserve[i].classList.add("zoomIn");
+      linkReserve[i].classList.remove("zoomOut");
+
+      }
+
+   }(i),200 * i);
+
+
+  }
+}else{
+
+
+
+     for( i = 0 ;  i < linkReserve.length ; i++){
+
+   setTimeout(function(i){
+    return function(){
+
+
+      linkReserve[i].classList.remove("zoomIn");
+      linkReserve[i].classList.add("zoomOut");
+
+
+
+      }
+
+   }(i),200 * i);
+
+
+  }
+
+
+}
+
+});
+
+
+var tsCount = document.querySelectorAll(".tspan-count");
+
+
+var len = document.querySelectorAll("svg.svg");
 
 var lenh5 = document.querySelectorAll(".portfolio-item h5");
 
-portfolio.onclick =  function(){
+port.onclick =  function(e){
+  console.log(e);
+ document.querySelectorAll(".active-crest")[0].classList.add("active-crest-one");
 
+$(".my-photo").addClass("my-photo-active");
 $(".portfolio-item").css("display" , "flex");
+$("footer").css("min-height" , "800px");
+$("html , body").animate({
+
+ scrollTop: $("#portfolio-wrapper-item").offset().top
+
+})
+
+        for (var i = 0 ; i < len.length ; i++){
 
 
-  for (var i = 0 ; i < len.length ; i++){
+      setTimeout(function(i){
+
+       return function(){
 
 
-setTimeout(function(i){
+               lenh5[i].style.display = "block";
+               lenh5[i].classList.add("animated");
+               lenh5[i].classList.add("slideInLeft");
+               len[i].style.display = "block";
+               len[i].classList.add("animated");
+               len[i].classList.add("slideInLeft");
 
- return function(){
-         lenh5[i].style.display = "block";
-         lenh5[i].classList.add("animated");
-         lenh5[i].classList.add("slideInLeft");
-         len[i].style.display = "block";
-         len[i].classList.add("animated");
-         len[i].classList.add("slideInLeft");
+               var valueCount = tsCount[i].innerHTML;
+               var j = 0;
+               var timer  = setInterval(function(){
+                tsCount[i].innerHTML = j;
+                j++;
+                if(j > valueCount) clearInterval(timer);
+               },40);
 
-   }
 
- }(i),1000 * i);
+         }
+
+       }(i),500 * i);
 
 }
 

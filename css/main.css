@@ -20,7 +20,7 @@ div[style*="text-align: right"] > a[target="_blank"] {
   border-right: none;
   border-left: none;
   position: relative;
-  height: calc(100% - 100px); }
+  height: 100%; }
 
 .no-video .video-container video,
 .touch .video-container video {
@@ -60,6 +60,8 @@ div[style*="text-align: right"] > a[target="_blank"] {
   font-size: 50px; }
 
 .video-container video {
+  -webkit-filter: blur(3px);
+  filter: blur(3px);
   position: absolute;
   z-index: 0;
   bottom: 0; }
@@ -280,7 +282,25 @@ a {
   transform: none; }
 
 .typed-cursor {
-  color: #FFF; }
+  color: #FFF;
+  -webkit-animation: 1s opac infinite linear;
+  animation: 1s opac infinite linear; }
+
+@-webkit-keyframes opac {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@keyframes opac {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
 
 header {
   position: relative;
@@ -1598,11 +1618,12 @@ footer .container {
   display: -ms-flexbox;
   display: flex; }
   footer .container .list-reserve-wrapper {
-    width: 30%;
+    width: 35%;
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end; }
     footer .container .list-reserve-wrapper .link-active-reserve {
+      position: relative;
       margin-left: auto;
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1614,9 +1635,54 @@ footer .container {
       width: 70%;
       text-align: center;
       background: #4B0082; }
+    footer .container .list-reserve-wrapper a {
+      overflow: hidden;
+      display: none;
+      position: relative;
+      margin-left: auto;
+      margin-top: 40px;
+      padding: 20px 10px;
+      color: rgba(255, 255, 255, 0.7);
+      border: 2px solid  gray;
+      width: 70%;
+      text-align: center;
+      background: #4B0082; }
+      footer .container .list-reserve-wrapper a:hover span {
+        -webkit-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+        transform: translateX(100%); }
+      footer .container .list-reserve-wrapper a:hover::before {
+        right: 0;
+        left: 0; }
+      footer .container .list-reserve-wrapper a span {
+        -webkit-transition: .5s;
+        -o-transition: .5s;
+        transition: .5s;
+        display: block; }
+      footer .container .list-reserve-wrapper a::before {
+        -webkit-transition: .5s;
+        -o-transition: .5s;
+        transition: .5s;
+        font-family: FontAwesome;
+        position: absolute;
+        content: "\f061";
+        width: 30px;
+        height: 30px;
+        left: -100%;
+        font-size: 25px;
+        top: 0;
+        bottom: 0;
+        right: 100%;
+        margin: auto;
+        text-align: center;
+        line-height: 30px; }
+    footer .container .list-reserve-wrapper a:last-child {
+      margin-bottom: 50px; }
   footer .container .portfolio-wrapper {
-    width: 70%; }
+    position: relative;
+    width: 65%; }
     footer .container .portfolio-wrapper .link-active-portfolio {
+      position: relative;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -1624,7 +1690,7 @@ footer .container {
       padding: 20px;
       color: rgba(255, 255, 255, 0.7);
       border: 2px solid  gray;
-      width: 30%;
+      width: 50%;
       text-align: center;
       background: #4B0082; }
     footer .container .portfolio-wrapper .portfolio-wrapper-item {
@@ -1655,8 +1721,11 @@ footer .container {
   width: 20px;
   height: 20px;
   display: block;
-  margin-left: auto;
-  position: relative; }
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 35px; }
   .active-crest::before {
     left: 0;
     top: 0;
@@ -1682,6 +1751,121 @@ footer .container {
     -webkit-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     transform: rotate(90deg); }
+
+.active-crest-one {
+  opacity: 0;
+  -webkit-transition: .5s opacity 2s;
+  -o-transition: .5s opacity 2s;
+  transition: .5s opacity 2s;
+  -webkit-animation: 3s crestRotate ease-in;
+  animation: 3s crestRotate ease-in; }
+
+.active-crest-two {
+  -webkit-animation: 1.5s crestRotate ease-in;
+  animation: 1.5s crestRotate ease-in; }
+  .active-crest-two::after {
+    -webkit-transform: rotate(0);
+    -ms-transform: rotate(0);
+    transform: rotate(0);
+    -webkit-transition: .5s transform 1s;
+    -o-transition: .5s transform 1s;
+    transition: .5s transform 1s; }
+
+@-webkit-keyframes crestRotate {
+  100% {
+    -webkit-transform: rotate(-3600deg);
+    transform: rotate(-3600deg); } }
+
+@keyframes crestRotate {
+  100% {
+    -webkit-transform: rotate(-3600deg);
+    transform: rotate(-3600deg); } }
+
+.my-photo-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 0;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 180px;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  -webkit-perspective-origin: 50% 0;
+  perspective-origin: 50% 0; }
+  .my-photo-wrapper .my-photo {
+    -webkit-box-shadow: 0px 0px 10px black;
+    box-shadow: 0px 0px 10px black;
+    -webkit-transition: 1s -webkit-transform 1.5s;
+    transition: 1s -webkit-transform 1.5s;
+    -o-transition: 1s transform 1.5s;
+    transition: 1s transform 1.5s;
+    transition: 1s transform 1.5s, 1s -webkit-transform 1.5s;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    -webkit-transform-origin: 0  0;
+    -ms-transform-origin: 0  0;
+    transform-origin: 0  0;
+    display: block;
+    background: url(../img/school.jpg) no-repeat;
+    -webkit-transform: rotate(-90deg) rotateY(90deg);
+    transform: rotate(-90deg) rotateY(90deg);
+    background-position-x: -35px;
+    background-size: cover;
+    position: relative;
+    overflow: hidden; }
+    .my-photo-wrapper .my-photo:hover::before {
+      width: 100%; }
+    .my-photo-wrapper .my-photo:hover a {
+      opacity: 1;
+      -webkit-transform: scale(1.5) rotate(90deg);
+      -ms-transform: scale(1.5) rotate(90deg);
+      transform: scale(1.5) rotate(90deg); }
+    .my-photo-wrapper .my-photo::before {
+      -webkit-transition: width .5s;
+      -o-transition: width .5s;
+      transition: width .5s;
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 0;
+      background: rgba(0, 0, 0, 0.5); }
+    .my-photo-wrapper .my-photo a {
+      opacity: 0;
+      display: block;
+      -webkit-transition: .5s;
+      -o-transition: .5s;
+      transition: .5s;
+      color: #FFF;
+      font-size: 35px;
+      background: transparent;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      text-align: center;
+      line-height: 50px;
+      width: 50px;
+      height: 50px;
+      -webkit-transform: scale(4) rotate(90deg);
+      -ms-transform: scale(4) rotate(90deg);
+      transform: scale(4) rotate(90deg); }
+    .my-photo-wrapper .my-photo-active {
+      -webkit-transform: rotate(-90deg) rotateY(0deg);
+      transform: rotate(-90deg) rotateY(0deg); }
+
+#port {
+  position: absolute;
+  width: 50%;
+  left: 0;
+  height: 120px;
+  top: 40px;
+  z-index: 10000; }
 
 @-webkit-keyframes spinner {
   0% {

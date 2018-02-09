@@ -20,7 +20,7 @@ require_once "header.php";
         <div class="container">
           <div class="filter">
             <div class="header-desc">
-                <h2>Здравствуйте! <br> ^1000  На этом сайте я вам расскажу <br> ^500 про заповедные места родной Белгородчины <br> ^500
+                <h2>Здравствуйте! <br> ^1000  На этом сайте я вам расскажу <br> ^500 про заповедные места родной Белгородчины
                 <h2>
             </div>
             <div class="header-desc2">
@@ -29,8 +29,7 @@ require_once "header.php";
           </div>
         </div>
         <video id="loop" autoplay loop class="fillWidth">
-            <source src="video-phon/Squirrel_and_Co.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
-            <source src="video-phon/Squirrel_and_Co.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
+            <source src="video-phon/720-1280.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
         </video>
         <div class="poster hidden" style="display:none;">
             <img src="
@@ -163,10 +162,10 @@ require_once "header.php";
 </div>
 
 
-<!-- <div class="preloader-wrapper">
+<div class="preloader-wrapper">
   <div class="preloader"></div>
   <div class="preloader-desc">Loading...</div>
-</div> -->
+</div>
 
 
 <?php
