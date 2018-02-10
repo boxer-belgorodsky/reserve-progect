@@ -1,5 +1,6 @@
 <?php
 $title = "Лес-на-Ворскле";
+$utlAddress = "http://caitorg.000webhostapp.com/forest-in-vorscla.php";
 require_once "header.php";
 
 ?>
@@ -23,6 +24,12 @@ require_once "header.php";
         </p>
         <p>Из водных растений в Ворскле обычны плавающие, образующие заросли у берегов - кубышка жёлтая, кувшинка белая,  ряска, роголистник. Из сорных растений подмаренник цепкий, крапивы двудомная и жгучая, горец птичий, лопух большой, чистотел, щирица запрокинутая.
         </p>
+        <div class="slick">
+         <div class="slick-item"><a data-fancybox="gallery" href="img/forest/guk-olen.jpg"><img src="img/forest/beetle_small.jpg"><h1>Этнодеревня "Кострома" в парке "Ключи"</h1></a></div>
+         <div class="slick-item"><a data-fancybox="gallery" href="img/forest/lesnaja_kunica.jpg"><img src="img/forest/marten_small.jpg"><h1>Храм святых мучениц Веры, Надежды, Любови и матери их Софии</h1></a></div>
+         <div class="slick-item"><a data-fancybox="gallery" href="img/forest/pechenochnica_blagorodnaja.jpg"><img src="img/forest/hepatica_small.jpg"><h1>Борисовская фабрика керамики</h1></a></div>
+         <div class="slick-item"><a data-fancybox="gallery" href="img/forest/starovosrastnaja dubrava.jpg"><img src="img/forest/oak_small.jpg"><h1>Памятник Победы - Звонница на Прохоровском поле</h1></a></div>
+       </div>
       </main>
       <?php require_once "aside.php" ?>
     </div>

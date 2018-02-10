@@ -200,13 +200,7 @@ $(".search-submit").on("click" , function(){
  });
 //tippy
 
-tippy("#search" , {
-    placement: "right",
-    delay: [200 , 0],
-    size: "small",
-    distance: 20
 
-        });
 
 //scrolldown
 

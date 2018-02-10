@@ -1,0 +1,74 @@
+
+
+
+@import "../fonts/_fonts"
+
+
+.preloader-wrapper
+ position: fixed
+ left: 0
+ bottom: 0
+ top: 0
+ right: 0
+ width: 100%
+ height: 100%
+ z-index: 2000000
+ &::before
+  content: ""
+  position: absolute
+  height: 100%
+  top: 0
+  left: 0
+  width: 50%
+  background: #16A085
+ &::after
+  content: ""
+  position: absolute
+  height: 100%
+  top: 0
+  right: 0
+  width: 50%
+  background: #16A085
+ .preloader
+  z-index: 100000000
+  width: 1px
+  animation: 2s spinner  infinite linear
+  border: 100px solid darken(#3498DB , 20%)
+   top: 100px solid transparent
+   left: 100px solid darken(#3498DB , 20%)
+   right: 100px solid darken(#3498DB , 20%)
+   bottom: 100px solid transparent
+  height: 1px
+  border-radius: 50%
+  position: absolute
+  left: 0
+  right: 0
+  top: 0
+  bottom: 0
+  margin: auto
+ .preloader-desc
+  z-index: 100000000
+  position: absolute
+  animation: 1.5s fade  infinite linear
+  margin-top: 100px
+  color: #FFF
+  font-size: 40px
+  font-family: 'Azoft Sans';
+  left: 50%
+  transform: translateX(-50% )
+.preloader-wrapper-load
+ transition: .5s z-index 2s
+ z-index: -100 !important
+ &::before
+  width: 0
+  transition: .3s 1s
+ &::after
+  transition: .3s 1s
+  width: 0
+ .preloader
+  opacity: 0
+  transition: .5s
+ .preloader-desc
+  opacity: 0
+  transition: .5s
+  animation: none

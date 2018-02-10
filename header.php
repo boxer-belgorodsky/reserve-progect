@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
 <head>
-  <meta charset="UTF-8">
+  <meta http-equiv="content-language" content="ru">
+  <meta http-equiv="content-type" content="text/html; charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="<?php echo $keywords ;?>">
+  <meta name="description" content="<?php echo $description;?>">
   <title><?php echo $title ; ?></title>
-
+  <link rel="alternate" href="<?php echo $utlAddress ;?>" hreflang="ru" />
+  <link rel="stylesheet" href="css/header.css">
   <script type="text/javascript">
     document.documentElement.className = document.documentElement.className.replace("no-js","js");
   </script>

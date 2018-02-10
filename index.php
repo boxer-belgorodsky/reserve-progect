@@ -6,11 +6,20 @@
 
 
 <?php
+$keywords = "Белгородский,климат,заповедник,дата основания,животный";
+$description = "Сайт про заповедные места Белгородской области.Представлены заповедники такие как: Лысые горы, Ямская степь, Стенки - Изгорья,Лес-на-Ворскле, Острасьевы яры, Бекарюковский бор.";
 $title = "Сайт про Белгород";
+$utlAddress = "http://caitorg.000webhostapp.com/";
 require_once "header.php";
 
 
 ?>
+
+
+<div class="preloader-wrapper">
+  <div class="preloader"></div>
+  <div class="preloader-desc">Loading...</div>
+</div>
 
 
 <span class="arrow-slide arrow-one"></span>
@@ -121,13 +130,53 @@ require_once "header.php";
        </p>
        <div class="slick">
          <div class="slick-item">
-          <a data-fancybox="gallery" href="img/belgor/bridge-for-river-min.png"><img src="img/belgor/bridge-for-river-min.png"><h1>Мост через реку</h1></a>
-
+          <a data-fancybox="gallery" href="img/belgor/bridge-for-river-min.png">
+            <img src="img/belgor/bridge-for-river-min.png" alt="Мост через реку">
+            <h1>Мост через реку</h1>
+          </a>
          </div>
-         <div class="slick-item"><a data-fancybox="gallery" href="img/belgor/zerkov-min.png"><img src="img/belgor/zerkov-min.png"><h1>Памятник Победы - Звонница на Прохоровском поле</h1></a></div>
-         <div class="slick-item"><a data-fancybox="gallery" href="img/belgor/hotmuh-very-beauty-min.png"><img src="img/belgor/hotmuh-very-beauty-min.png"><h1>Вид окрестностей в Хотмыжске  </h1></a></div>
-         <div class="slick-item"><a data-fancybox="gallery" href="img/belgor/arhangel-min.png"><img src="img/belgor/arhangel-min.png"><h1>Храм Архангела Гавриила</h1></a></div>
-         <div class="slick-item"><a data-fancybox="gallery" href="img/belgor/park-key-min.png"><img src="img/belgor/park-key-min.png"><h1>описание</h1></a></div>
+         <div class="slick-item">
+          <a data-fancybox="gallery" href="img/belgor/zerkov-min.png">
+            <img alt="Памятник Победы - Звонница на Прохоровском поле" src="img/belgor/zerkov-min.png">
+            <h1>Памятник Победы - Звонница на Прохоровском поле</h1>
+          </a>
+         </div>
+         <div class="slick-item">
+          <a data-fancybox="gallery" href="img/belgor/hotmuh-very-beauty-min.png">
+            <img src="img/belgor/hotmuh-very-beauty-min.png" alt="Вид окрестностей в Хотмыжске">
+            <h1>Вид окрестностей в Хотмыжске</h1>
+          </a>
+         </div>
+         <div class="slick-item">
+          <a data-fancybox="gallery" href="img/belgor/arhangel-min.png">
+            <img src="img/belgor/arhangel-min.png" alt="Храм Архангела Гавриила">
+            <h1>Храм Архангела Гавриила</h1>
+          </a>
+         </div>
+         <div class="slick-item">
+          <a data-fancybox="gallery" href="img/belgor/park-key-min.png">
+            <img src="img/belgor/park-key-min.png" alt="Этнодеревня "Кострома" в парке "Ключи"">
+            <h1>Этнодеревня "Кострома" в парке "Ключи"</h1>
+          </a>
+         </div>
+         <div class="slick-item">
+          <a data-fancybox="gallery" href="img/belgor/believe-min.png">
+            <img src="img/belgor/believe-min.png" alt="Храм святых мучениц Веры, Надежды, Любови и матери их Софии">
+            <h1>Храм святых мучениц Веры, Надежды, Любови и матери их Софии</h1>
+          </a>
+         </div>
+         <div class="slick-item">
+          <a data-fancybox="gallery" href="img/belgor/fabr-min.png">
+            <img src="img/belgor/fabr-min.png" alt="Борисовская фабрика керамики">
+            <h1>Борисовская фабрика керамики</h1>
+          </a>
+         </div>
+         <div class="slick-item">
+          <a data-fancybox="gallery" href="img/belgor/kursk-min.png">
+            <img src="img/belgor/kursk-min.png" alt="Памятник Победы - Звонница на Прохоровском поле">
+            <h1>Памятник Победы - Звонница на Прохоровском поле</h1>
+          </a>
+         </div>
        </div>
      </main>
      <?php  require_once "aside.php" ; ?>
@@ -156,20 +205,16 @@ require_once "header.php";
 
 <div class="sidenav">
   <nav>
-   <a href="">Ямская степь</a>
-   <a href="">Лес-на-Ворскле</a>
-   <a href="">Стенки Изгорья</a>
-   <a href="">Бекарюковский бор</a>
-   <a href="">Острасьевы яры</a>
-   <a href="">Лысые горы</a>
+   <a href="ymskaya-step.php">Ямская степь</a>
+   <a href="forest-in-vorscla.php">Лес-на-Ворскле</a>
+   <a href="walls-highlands.php">Стенки Изгорья</a>
+   <a href="bekaryukovsky-bor.php">Бекарюковский бор</a>
+   <a href="ostravaevy-yar.php">Острасьевы яры</a>
+   <a href="bald-mountain.php">Лысые горы</a>
   </nav>
 </div>
 
 
-<div class="preloader-wrapper">
-  <div class="preloader"></div>
-  <div class="preloader-desc">Loading...</div>
-</div>
 
 
 <?php

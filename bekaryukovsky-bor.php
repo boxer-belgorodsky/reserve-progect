@@ -1,5 +1,6 @@
 <?php
 $title = "Бекарюковский бор";
+$utlAddress = "http://caitorg.000webhostapp.com/bekaryukovsky-bor.php";
 require_once "header.php";
 
 ?>
