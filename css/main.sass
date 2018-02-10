@@ -1193,6 +1193,8 @@ main
    height: 500px
    width: 100%
    h1
+    padding: 20px 0
+    line-height: 70px
     transition: .8s
     transform: translateY(100%)
     margin: 0
@@ -1202,7 +1204,6 @@ main
     background: rgba(0,0,0,.7)
     width: 100%
     min-height: 100px
-    line-height: 100px
     color: #FFF
     position: absolute
     &:hover
@@ -1327,12 +1328,14 @@ footer
     width: 70%
     text-align: center
     background: #4B0082
+    &:hover
+     cursor: pointer
    a
     overflow: hidden
     display: none
     position: relative
     margin-left: auto
-    margin-top: 40px
+    margin-top: 20px
     padding: 20px 10px
     color: rgba(255,255,255,.7)
     border: 2px solid  gray
@@ -1394,11 +1397,13 @@ footer
      svg
       display: none
      h5
+      font-size: 24px
       display: none
       text-align: center
       color: #FFF
 
 .active-crest
+ animation: 1.5s crestRotateReverse ease-in
  width: 20px
  height: 20px
  display: block
@@ -1419,6 +1424,7 @@ footer
   background: #FFF
   content: ""
  &::after
+  transition: .5s transform 1s
   left: 0
   top: 0
   right: 0
@@ -1441,6 +1447,11 @@ footer
   transition: .5s transform 1s
 
 
+@keyframes crestRotateReverse
+ 100%
+
+  transform: rotate(3600deg)
+
 @keyframes crestRotate
  100%
 
@@ -1449,10 +1460,9 @@ footer
 
 .my-photo-wrapper
  display: flex
- height: 0
  justify-content: center
  width: 100%
- margin-top: 180px
+ margin-top: 80px
  perspective: 1000px
  perspective-origin: 50% 0
  .my-photo
@@ -1463,24 +1473,24 @@ footer
   border-radius: 50%
   transform-origin: 0  0
   display: block
-  background:  url(../img/school.jpg) no-repeat
-  transform: rotate(-90deg) rotateY(90deg)
-  background-position-x: -35px
+  background:  url(../img/school-min.jpg) no-repeat
+  transform:  rotateX(90deg)
+  background-position-y: -20px
   background-size: cover
   position: relative
   overflow: hidden
   &:hover
    &::before
-    width: 100%
+    height: 100%
    a
     opacity: 1
-    transform: scale(1.5)  rotate(90deg)
+    transform: scale(1.5)
   &::before
-   transition: width .5s
+   transition: height .5s
    content: ""
    position: absolute
-   height: 100%
-   width: 0
+   width: 100%
+   height: 0
    background: rgba(0,0,0,.5)
   a
    opacity: 0
@@ -1499,9 +1509,9 @@ footer
    line-height: 50px
    width: 50px
    height: 50px
-   transform: scale(4) rotate(90deg)
+   transform: scale(4)
   &-active
-   transform: rotate(-90deg) rotateY(0deg)
+   transform:  rotateX(0deg)
 
 #port
  position: absolute
@@ -1510,6 +1520,8 @@ footer
  height: 120px
  top: 40px
  z-index: 10000
+ &:hover
+  cursor: pointer
 
 @keyframes spinner
  0%

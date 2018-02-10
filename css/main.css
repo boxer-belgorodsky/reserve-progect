@@ -1470,6 +1470,8 @@ main h1 {
     height: 500px;
     width: 100%; }
     .slick-item a h1 {
+      padding: 20px 0;
+      line-height: 70px;
       -webkit-transition: .8s;
       -o-transition: .8s;
       transition: .8s;
@@ -1483,7 +1485,6 @@ main h1 {
       background: rgba(0, 0, 0, 0.7);
       width: 100%;
       min-height: 100px;
-      line-height: 100px;
       color: #FFF;
       position: absolute; }
       .slick-item a h1:hover {
@@ -1635,12 +1636,14 @@ footer .container {
       width: 70%;
       text-align: center;
       background: #4B0082; }
+      footer .container .list-reserve-wrapper .link-active-reserve:hover {
+        cursor: pointer; }
     footer .container .list-reserve-wrapper a {
       overflow: hidden;
       display: none;
       position: relative;
       margin-left: auto;
-      margin-top: 40px;
+      margin-top: 20px;
       padding: 20px 10px;
       color: rgba(255, 255, 255, 0.7);
       border: 2px solid  gray;
@@ -1713,11 +1716,14 @@ footer .container {
         footer .container .portfolio-wrapper .portfolio-wrapper-item .portfolio-item svg {
           display: none; }
         footer .container .portfolio-wrapper .portfolio-wrapper-item .portfolio-item h5 {
+          font-size: 24px;
           display: none;
           text-align: center;
           color: #FFF; }
 
 .active-crest {
+  -webkit-animation: 1.5s crestRotateReverse ease-in;
+  animation: 1.5s crestRotateReverse ease-in;
   width: 20px;
   height: 20px;
   display: block;
@@ -1738,6 +1744,9 @@ footer .container {
     background: #FFF;
     content: ""; }
   .active-crest::after {
+    -webkit-transition: .5s transform 1s;
+    -o-transition: .5s transform 1s;
+    transition: .5s transform 1s;
     left: 0;
     top: 0;
     right: 0;
@@ -1771,6 +1780,16 @@ footer .container {
     -o-transition: .5s transform 1s;
     transition: .5s transform 1s; }
 
+@-webkit-keyframes crestRotateReverse {
+  100% {
+    -webkit-transform: rotate(3600deg);
+    transform: rotate(3600deg); } }
+
+@keyframes crestRotateReverse {
+  100% {
+    -webkit-transform: rotate(3600deg);
+    transform: rotate(3600deg); } }
+
 @-webkit-keyframes crestRotate {
   100% {
     -webkit-transform: rotate(-3600deg);
@@ -1785,12 +1804,11 @@ footer .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 0;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
   width: 100%;
-  margin-top: 180px;
+  margin-top: 80px;
   -webkit-perspective: 1000px;
   perspective: 1000px;
   -webkit-perspective-origin: 50% 0;
@@ -1810,28 +1828,28 @@ footer .container {
     -ms-transform-origin: 0  0;
     transform-origin: 0  0;
     display: block;
-    background: url(../img/school.jpg) no-repeat;
-    -webkit-transform: rotate(-90deg) rotateY(90deg);
-    transform: rotate(-90deg) rotateY(90deg);
-    background-position-x: -35px;
+    background: url(../img/school-min.jpg) no-repeat;
+    -webkit-transform: rotateX(90deg);
+    transform: rotateX(90deg);
+    background-position-y: -20px;
     background-size: cover;
     position: relative;
     overflow: hidden; }
     .my-photo-wrapper .my-photo:hover::before {
-      width: 100%; }
+      height: 100%; }
     .my-photo-wrapper .my-photo:hover a {
       opacity: 1;
-      -webkit-transform: scale(1.5) rotate(90deg);
-      -ms-transform: scale(1.5) rotate(90deg);
-      transform: scale(1.5) rotate(90deg); }
+      -webkit-transform: scale(1.5);
+      -ms-transform: scale(1.5);
+      transform: scale(1.5); }
     .my-photo-wrapper .my-photo::before {
-      -webkit-transition: width .5s;
-      -o-transition: width .5s;
-      transition: width .5s;
+      -webkit-transition: height .5s;
+      -o-transition: height .5s;
+      transition: height .5s;
       content: "";
       position: absolute;
-      height: 100%;
-      width: 0;
+      width: 100%;
+      height: 0;
       background: rgba(0, 0, 0, 0.5); }
     .my-photo-wrapper .my-photo a {
       opacity: 0;
@@ -1852,12 +1870,12 @@ footer .container {
       line-height: 50px;
       width: 50px;
       height: 50px;
-      -webkit-transform: scale(4) rotate(90deg);
-      -ms-transform: scale(4) rotate(90deg);
-      transform: scale(4) rotate(90deg); }
+      -webkit-transform: scale(4);
+      -ms-transform: scale(4);
+      transform: scale(4); }
     .my-photo-wrapper .my-photo-active {
-      -webkit-transform: rotate(-90deg) rotateY(0deg);
-      transform: rotate(-90deg) rotateY(0deg); }
+      -webkit-transform: rotateX(0deg);
+      transform: rotateX(0deg); }
 
 #port {
   position: absolute;
@@ -1866,6 +1884,8 @@ footer .container {
   height: 120px;
   top: 40px;
   z-index: 10000; }
+  #port:hover {
+    cursor: pointer; }
 
 @-webkit-keyframes spinner {
   0% {

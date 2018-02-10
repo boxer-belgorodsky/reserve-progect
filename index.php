@@ -31,10 +31,6 @@ require_once "header.php";
         <video id="loop" autoplay loop class="fillWidth">
             <source src="video-phon/720-1280.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
         </video>
-        <div class="poster hidden" style="display:none;">
-            <img src="
-            video-phon/Squirrel_and_Co.jpg" alt="">
-        </div>
     </div>
 </div>
 <section id="one" style="min-height:1000px">
@@ -124,13 +120,13 @@ require_once "header.php";
        </p>
        <div class="slick">
          <div class="slick-item">
-          <a data-fancybox="gallery" href="img/belgor/bridge-for-river.png"><img src="img/belgor/bridge-for-river.png"><h1>описание</h1></a>
+          <a data-fancybox="gallery" href="img/belgor/bridge-for-river.png"><img src="img/belgor/bridge-for-river-min.png"><h1>Мост через реку</h1></a>
 
          </div>
-         <div class="slick-item"><a data-fancybox="gallery" href="img/belgor/zerkov.png"><img src="img/belgor/zerkov.png"><h1>описание</h1></a></div>
-         <div class="slick-item"><a data-fancybox="gallery" href="img/belgor/hotmuh-very-beauty.png"><img src="img/belgor/hotmuh-very-beauty.png"><h1>описание</h1></a></div>
-         <div class="slick-item"><a data-fancybox="gallery" href="img/belgor/arhangel.png"><img src="img/belgor/arhangel.png"><h1>описание</h1></a></div>
-         <div class="slick-item"><a data-fancybox="gallery" href="img/belgor/park-key.png"><img src="img/belgor/park-key.png"><h1>описание</h1></a></div>
+         <div class="slick-item"><a data-fancybox="gallery" href="img/belgor/zerkov.png"><img src="img/belgor/zerkov-min.png"><h1>Памятник Победы - Звонница на Прохоровском поле</h1></a></div>
+         <div class="slick-item"><a data-fancybox="gallery" href="img/belgor/hotmuh-very-beauty-min.png"><img src="img/belgor/hotmuh-very-beauty-min.png"><h1>Вид окрестностей в Хотмыжске  </h1></a></div>
+         <div class="slick-item"><a data-fancybox="gallery" href="img/belgor/arhangel.png"><img src="img/belgor/arhangel-min.png"><h1>Храм Архангела Гавриила</h1></a></div>
+         <div class="slick-item"><a data-fancybox="gallery" href="img/belgor/park-key.png"><img src="img/belgor/park-key-min.png"><h1>описание</h1></a></div>
        </div>
      </main>
      <?php  require_once "aside.php" ; ?>

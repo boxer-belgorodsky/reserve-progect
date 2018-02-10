@@ -614,7 +614,7 @@ $(".slick").slick({
   speed: 300,
   slidesToShow: 1
 });
-
+var j = 0;
 var i = 0 ;
 
 var linkReserve = document.querySelectorAll(".list-reserve-wrapper a");
@@ -624,7 +624,7 @@ $(".link-active-reserve").on("click" , function(){
 document.querySelectorAll(".active-crest")[1].classList.toggle("active-crest-two");
 if(document.querySelectorAll(".active-crest")[1].classList.contains('active-crest-two')){
   for( i = 0 ; i < linkReserve.length ; i++){
-
+   j = 0 ;
    setTimeout(function(i){
     return function(){
 
@@ -643,7 +643,7 @@ if(document.querySelectorAll(".active-crest")[1].classList.contains('active-cres
 
 
 
-     for( i = 0 ;  i < linkReserve.length ; i++){
+     for( i = linkReserve.length ;  i >= 0 ; i-- , j++){
 
    setTimeout(function(i){
     return function(){
@@ -651,12 +651,14 @@ if(document.querySelectorAll(".active-crest")[1].classList.contains('active-cres
 
       linkReserve[i].classList.remove("zoomIn");
       linkReserve[i].classList.add("zoomOut");
-
+      setTimeout(function(){
+         linkReserve[i].style.display = "none";
+      },1000);
 
 
       }
 
-   }(i),200 * i);
+   }(i),200 * j);
 
 
   }

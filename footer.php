@@ -335,16 +335,41 @@
 </footer>
 
 
+<script type="text/javascript">
+
+function constructor(way , style = "stylesheet" , type = "text/css"){
+
+    var link = document.createElement("link");
+    link.setAttribute("rel" , style);
+    link.setAttribute("type" , type);
+    link.setAttribute("href" , way);
+    document.querySelector("head").appendChild(link);
+}
+
+constructor("css/animate.css");
+constructor("https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css");
+constructor("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+constructor("img/favicon.png" , "shortcut icon" , "image/x-icon");
+constructor("css/slick.css");
+constructor("css/slick-theme.css");
+constructor("css/jquery.fancybox.min.css");
+constructor("css/main.css");
+
+
+</script>
+
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-<script src="tippy/tippy.all.min.js"></script>
+<script src="js/typed.min.js"></script>
+
+
+<script src="tippy/tippy.all.min.js" ></script>
 
 <script src="js/slick.min.js"></script>
 
 <script src="js/jquery.fancybox.min.js"></script>
 
-<script src="js/typed.min.js"></script>
 
 <!-- headhesive -->
 <script src="js/headhesive.min.js"></script>
@@ -357,11 +382,11 @@
 </script>
 <!-- headhesive -->
 
+<script src="js/main-min.js"></script>
 
 
 
 
-<script src="js/main.js"></script>
 
 
 </body>
