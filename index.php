@@ -13,7 +13,7 @@ require_once "header.php";
 ?>
 
 
-<span class="arrow-slide"></span>
+<span class="arrow-slide arrow-one"></span>
 
 <div class="homepage-hero-module" >
     <div class="video-container">
@@ -33,11 +33,12 @@ require_once "header.php";
         </video>
     </div>
 </div>
-<section id="one" style="min-height:1000px">
+<section id="one">
  <div class="container about-down">
     <div class="facts-about">
+        <h2 class="bel-desc">Несколько интересных фактов о Белгородской области</h2>
       <div class="facts-about-down">
-        <h2>Ну, а пока, несколько интересных фактов об этом крае</h2>
+        <h2 class="bel-desc2">Ну, а пока, несколько интересных фактов об этом крае</h2>
       </div>
       <span class="facts-about-down-desc"></span>
     </div>
@@ -120,13 +121,13 @@ require_once "header.php";
        </p>
        <div class="slick">
          <div class="slick-item">
-          <a data-fancybox="gallery" href="img/belgor/bridge-for-river.png"><img src="img/belgor/bridge-for-river-min.png"><h1>Мост через реку</h1></a>
+          <a data-fancybox="gallery" href="img/belgor/bridge-for-river-min.png"><img src="img/belgor/bridge-for-river-min.png"><h1>Мост через реку</h1></a>
 
          </div>
-         <div class="slick-item"><a data-fancybox="gallery" href="img/belgor/zerkov.png"><img src="img/belgor/zerkov-min.png"><h1>Памятник Победы - Звонница на Прохоровском поле</h1></a></div>
+         <div class="slick-item"><a data-fancybox="gallery" href="img/belgor/zerkov-min.png"><img src="img/belgor/zerkov-min.png"><h1>Памятник Победы - Звонница на Прохоровском поле</h1></a></div>
          <div class="slick-item"><a data-fancybox="gallery" href="img/belgor/hotmuh-very-beauty-min.png"><img src="img/belgor/hotmuh-very-beauty-min.png"><h1>Вид окрестностей в Хотмыжске  </h1></a></div>
-         <div class="slick-item"><a data-fancybox="gallery" href="img/belgor/arhangel.png"><img src="img/belgor/arhangel-min.png"><h1>Храм Архангела Гавриила</h1></a></div>
-         <div class="slick-item"><a data-fancybox="gallery" href="img/belgor/park-key.png"><img src="img/belgor/park-key-min.png"><h1>описание</h1></a></div>
+         <div class="slick-item"><a data-fancybox="gallery" href="img/belgor/arhangel-min.png"><img src="img/belgor/arhangel-min.png"><h1>Храм Архангела Гавриила</h1></a></div>
+         <div class="slick-item"><a data-fancybox="gallery" href="img/belgor/park-key-min.png"><img src="img/belgor/park-key-min.png"><h1>описание</h1></a></div>
        </div>
      </main>
      <?php  require_once "aside.php" ; ?>
@@ -154,7 +155,14 @@ require_once "header.php";
 
 
 <div class="sidenav">
-  <nav></nav>
+  <nav>
+   <a href="">Ямская степь</a>
+   <a href="">Лес-на-Ворскле</a>
+   <a href="">Стенки Изгорья</a>
+   <a href="">Бекарюковский бор</a>
+   <a href="">Острасьевы яры</a>
+   <a href="">Лысые горы</a>
+  </nav>
 </div>
 
 

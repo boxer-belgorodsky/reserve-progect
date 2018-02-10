@@ -47,7 +47,6 @@ function scaleBannerVideoSize(element){
     videoWidth,
     videoHeight;
 
-     console.log(windowHeight);
 
     $(element).each(function(){
         var videoAspectRatio = $(this).data('height')/$(this).data('width');
@@ -69,7 +68,6 @@ function scaleBannerVideoSize(element){
 
 
 
-
 // подключили видео
 
 //disqus
@@ -87,22 +85,30 @@ if(x == 0){
 //disqus
 
 var crest = document.querySelectorAll(".main-nav-brand")[0],
-    crest2 = document.querySelectorAll(".main-nav-brand")[1];
+    crest2 = document.querySelectorAll(".main-nav-brand")[1],
+    sidenav = document.querySelector(".sidenav");
 
 $(crest).on("click" , function(e){
 
- if ( document.documentElement.clientWidth < 768){
+ if ( document.documentElement.clientWidth <= 768){
      e.preventDefault();
+
     $(this).toggleClass("main-nav-brand-active");
+    $(crest2).toggleClass("main-nav-brand-active");
+    if(crest.classList.contains('main-nav-brand-active')) sidenav.classList.add("sidenav-active");
+    else sidenav.classList.remove("sidenav-active");
  }
 
 });
 
 $(crest2).on("click" , function(e){
 
- if ( document.documentElement.clientWidth < 768){
+ if ( document.documentElement.clientWidth <= 768){
      e.preventDefault();
     $(this).toggleClass("main-nav-brand-active");
+    $(crest).toggleClass("main-nav-brand-active");
+    if(crest.classList.contains('main-nav-brand-active')) sidenav.classList.add("sidenav-active");
+    else sidenav.classList.remove("sidenav-active");
  }
 
 });
@@ -258,7 +264,9 @@ function count(){
     });
    }
 
+
   if(document.querySelector('#one')){
+    if(document.documentElement.clientWidth > 576){
  document.querySelector("body").addEventListener("wheel" , function(event){
     if(document.documentElement.className == "active-html js"){
      if(event.deltaY > 0 && pageYOffset < document.documentElement.clientHeight){
@@ -280,6 +288,7 @@ function count(){
           }
         }
     });
+   }
  }
 
 
@@ -302,7 +311,8 @@ $(".subscribedrop-form").submit(function(){
       subscribeEmail_one = document.querySelectorAll(".subscribe-email")[0].value,
       subscribeName_two  = document.querySelectorAll(".subscribe-name")[1].value,
       subscribeEmail_two = document.querySelectorAll(".subscribe-email")[1].value;
-   console.log(/@/.test(this.querySelectorAll("input")[1].value));
+
+
    if(this.querySelectorAll("input")[0].value == "" || this.querySelectorAll("input")[1].value == "" || !(/.+@.+\..+/i.test(this.querySelectorAll("input")[1].value))){
     x = 1;
 
@@ -599,7 +609,7 @@ for (var i = 0 ; i < allh4.length ; i++){
 
 }
 
-  console.log(heightTwo);
+
   if(sideBarUl.getBoundingClientRect().top < -200 || sideBarUl.getBoundingClientRect().top > 500){
     if( document.getElementById("two").getBoundingClientRect().top > -heightTwo)
     document.querySelector(".nav-main").style.top = Math.abs(document.getElementById("two").getBoundingClientRect().top) + 100 + "px";
@@ -677,7 +687,7 @@ var len = document.querySelectorAll("svg.svg");
 var lenh5 = document.querySelectorAll(".portfolio-item h5");
 
 port.onclick =  function(e){
-  console.log(e);
+
  document.querySelectorAll(".active-crest")[0].classList.add("active-crest-one");
 
 $(".my-photo").addClass("my-photo-active");
@@ -721,6 +731,10 @@ $("html , body").animate({
 
 
 }
+
+
+
+
 
 
 

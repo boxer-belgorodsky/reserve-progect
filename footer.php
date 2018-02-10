@@ -382,7 +382,7 @@ constructor("css/main.css");
 </script>
 <!-- headhesive -->
 
-<script src="js/main-min.js"></script>
+<script src="js/main.js"></script>
 
 
 

@@ -1,12 +1,12 @@
 
 
-@media screen and (max-height: 645px)
+@media screen and (max-height: 667px)
  .video-container .filter
   font-size: 40px
  .mail-to-me
-  bottom: -435px
+  bottom: -450px
   &:hover
-   bottom: -390px
+   bottom: -450px
   .submit-mail
    height: 390px
    textarea
@@ -75,6 +75,7 @@
  #one
   .about-down
    padding-top: 100px
+   padding-bottom: 50px
    .facts-animate
     margin: 30px 0
     font-size: 30px
@@ -88,16 +89,59 @@
      font-size: 20px
 
 
+ .typed-cursor
+  display: none
+
+ footer
+ .container
+  .list-reserve-wrapper
+  .portfolio-wrapper
+   width: 45%
+   .link-active-portfolio
+    width: 100% !important
+   .portfolio-wrapper-item
+    margin: 45px 0
+    flex-wrap: wrap
+
+
+
+
 @media screen and (max-width: 768px)
  .sidenav
   position: fixed
   width: 50%
   background: #FFF
   z-index: 10000000
-  right: 0
+  right: -100%
   top: 0
+  transition: .5s right .5s
   bottom: 0
   display: block
+  nav
+   padding: 50px 0
+   height: 100%
+   display: flex
+   flex-direction: column
+   justify-content: space-between
+   a
+    color: black
+    text-align: center
+
+ .sidenav-active
+  right: 0
+
+
+ .searchdown
+  width: 70%
+
+ .slick-item
+  a
+   h1
+    min-height: 70px
+    font-size: 23px
+    line-height: 40px
+
+
 
  header
   .container
@@ -161,6 +205,11 @@
         opacity: 0
 
  #two
+  .home-page
+   aside
+    .aside-wrapper
+     display: flex
+     justify-content: center
   .nav-main
    display: none
  #one
@@ -168,3 +217,193 @@
    bottom: 20px
    &:hover
     bottom: 18px
+
+
+
+ footer
+  .container
+   .list-reserve-wrapper
+    display: none
+   .portfolio-wrapper
+    width: 100%
+    .link-active-portfolio
+     width: 100%
+    .portfolio-wrapper-item
+     margin: 45px 0
+
+
+
+ .mail-to-me
+  bottom: -550px
+  &:hover
+   bottom: -550px
+ .mail-to-me-up
+  bottom: -10px
+  &:hover
+   cursor: auto
+   bottom: -10px
+
+@media screen and (max-width: 576px)
+
+ .homepage-hero-module
+  display: none
+
+
+
+ #one
+  .about-down
+   min-height: 100px
+   padding-bottom: 100px
+   .facts-about
+    padding: 0 !important
+    .facts-about-down-desc
+     display: none
+
+ .searchdown
+  width: 100%
+
+
+ #port
+  width: 100%
+
+ .search-nav
+  margin-right: 30px !important
+
+
+ header
+  .container
+   .main-nav:last-child
+    div
+     a
+      display: none
+
+
+
+ .bel-desc
+  display: block
+  font-size: 20px
+  text-align: center
+
+
+
+ .bel-desc2
+  display: none
+
+
+ .arrow-one
+  display: none
+
+ .typed-cursor
+  display: none
+
+ .mail-to-me
+  bottom: -550px
+  &:hover
+   bottom: -550px
+ .mail-to-me-up
+  bottom: -10px
+  &:hover
+   cursor: auto
+   bottom: -10px
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 320px) ,  (max-width: 480px)
+
+ .slick
+  &-item
+   max-height: 500px
+   position: relative
+   a
+    height: 500px
+    width: 100%
+    h1
+     padding: 20px 0
+     line-height: 70px
+     transition: .8s
+     transform: translateY(100%)
+     margin: 0
+     left: 0
+     bottom: 0
+     text-align: center
+     background: rgba(0,0,0,.7)
+     width: 100%
+     min-height: 100px
+     color: #FFF
+     position: absolute
+     &:hover
+       transform: translateY(0)
+    img
+     overflow: hidden
+     transition: .8s
+     width: 100%
+     &:hover
+       transform: none
+       filter: none
+     &:hover + h1
+       transform: translateY(100%)
+
+
+
+ .mail-to-me
+  bottom: -450px
+  &:hover
+   bottom: -450px
+  .h-mail
+   width: 85%
+ .mail-to-me-up
+  bottom: -10px
+  &:hover
+   cursor: auto
+   bottom: -10px
+
+
+
+
+ footer
+  .container
+   .list-reserve-wrapper
+    display: none
+   .portfolio-wrapper
+    width: 100%
+    .link-active-portfolio
+     width: 100%
+    .portfolio-wrapper-item
+     flex-wrap: wrap
+     display: flex
+     margin: 45px 0
+     .portfolio-item
+      width: 50%
+      margin-top: 15px
+
+
+
+@media screen and (max-width: 320px)
+
+ .aside-wrapper
+  display: none !important
+
+
+@media screen and (min-height: 667px) and  (max-width: 576px)
+ .video-container .filter
+  font-size: 40px
+ .mail-to-me
+  bottom: -550px
+  &:hover
+   bottom: -550px
+ .mail-to-me-up
+  bottom: -10px
+  &:hover
+   cursor: auto
+   bottom: -10px
+
+
