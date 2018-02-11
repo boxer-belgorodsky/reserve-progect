@@ -4,6 +4,20 @@ $utlAddress = "http://caitorg.000webhostapp.com/walls-highlands.php";
 require_once "header.php";
 
 ?>
+
+<style type="text/css">
+  .sidenav nav a[href="walls-highlands.php"] {
+        mix-blend-mode: screen;
+        padding: 20px 0px;
+        -webkit-box-shadow: 0px 0px 25px  gold;
+        box-shadow: 0px 0px 25px  gold;
+        background: #a0bad3;
+        font-family: 'Azoft Sans';
+        text-align: center;
+        }
+</style>
+
+
 <section id="two">
   <div class="container">
     <div class="row home-page">
@@ -31,7 +45,7 @@ require_once "header.php";
        </p>
        <p>Во флоре заповедного участка насчитывается около 710 видов сосудистых растений, 356 видов цветковых растений. Из них внесены в Красную книгу РФ — 10, в Красную книгу Белгородской области — 46, в том числе: некоторые орхидные, ковыли, оносма. Волчеягодник Софии к настоящему времени не сохранился.В настоящее время сохранилось 8 экземпляров сосны меловой в возрасте от 70 до 200 лет
        </p>
-        <div class="slick">
+        <div class="slick" id="slick">
          <div class="slick-item"><a data-fancybox="gallery" href="img/walls/Barsuk.jpg"><img src="img/walls/Barsuk.jpg"><h1>Этнодеревня "Кострома" в парке "Ключи"</h1></a></div>
          <div class="slick-item"><a data-fancybox="gallery" href="img/walls/Dibka_stepnaja.jpg"><img src="img/walls/Dibka_stepnaja.jpg"><h1>Храм святых мучениц Веры, Надежды, Любови и матери их Софии</h1></a></div>
          <div class="slick-item"><a data-fancybox="gallery" href="img/walls/Klematis_celnolistnij.JPG"><img src="img/walls/Klematis_celnolistnij.JPG"><h1>Борисовская фабрика керамики</h1></a></div>
@@ -49,7 +63,33 @@ require_once "header.php";
 
 
 
+<div class="mail-to-me">
+ <h3 class="h-mail">Напишите мне <span class="mail-desc">если заметили какую-либо ошибку <br> или есть предложения по улудшению сайта</span><span class="close-mail"></span></h3>
+ <form class="submit-mail">
+   <label for="">
+    <input type="email" placeholder="Email">
+    <div>необязательно , но желательно для более удачной доставки письма</div>
+   </label>
+   <label>
+    <input type="text" required placeholder="Тема письма">
+   </label>
+   <textarea placeholder="Ваше сообщение" required></textarea>
+   <button type="submit">Отправить</button>
+ </form>
+</div>
 
+
+<div class="sidenav">
+  <nav>
+   <a href="index.php">Главная</a>
+   <a href="ymskaya-step.php">Ямская степь</a>
+   <a href="forest-in-vorscla.php">Лес-на-Ворскле</a>
+   <a href="walls-highlands.php">Стенки Изгорья</a>
+   <a href="bekaryukovsky-bor.php">Бекарюковский бор</a>
+   <a href="ostravaevy-yar.php">Острасьевы яры</a>
+   <a href="bald-mountain.php">Лысые горы</a>
+  </nav>
+</div>
 
 
 

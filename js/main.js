@@ -497,7 +497,7 @@ function funcMailError(){
 
 }
 function funcMailSuccess(data){
-  alert(data);
+
  $(".submit-mail button").addClass('submit-mail-button-success');
  var form = document.querySelector(".submit-mail");
  var createSpan = document.createElement("span");
@@ -573,14 +573,26 @@ for( var i = 0 ; i < allh4.length ; i++){
   createSideBarA.className =  i;
 }
 
+$('<li><a class="watch-picture">Просмотреть картинки</a></li>').appendTo(sideBarUl);
+
 var navA = document.querySelectorAll(".nav-main-list li a");
 
-$(".nav-main-list li a").on("click" , function(e){
+$(".nav-main-list li:not(:last) a").on("click" , function(e){
 
  var scroll =  e.target.className;
 
   $("html , body").animate({
       scrollTop : $("#" + scroll).offset().top + -200 + "px"
+
+         });
+
+});
+$(".nav-main-list li a.watch-picture").on("click" , function(e){
+
+
+
+  $("html , body").animate({
+      scrollTop : $("#slick").offset().top + -200 + "px"
 
          });
 

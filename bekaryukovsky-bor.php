@@ -4,6 +4,20 @@ $utlAddress = "http://caitorg.000webhostapp.com/bekaryukovsky-bor.php";
 require_once "header.php";
 
 ?>
+
+<style type="text/css">
+  .sidenav nav a[href="bekaryukovsky-bor.php"] {
+        mix-blend-mode: screen;
+        padding: 20px 0px;
+        -webkit-box-shadow: 0px 0px 25px  gold;
+        box-shadow: 0px 0px 25px  gold;
+        background: #a0bad3;
+        font-family: 'Azoft Sans';
+        text-align: center;
+        }
+</style>
+
+
 <section id="two">
   <div class="container">
     <div class="row home-page">
@@ -33,7 +47,33 @@ require_once "header.php";
 </section>
 
 
+<div class="mail-to-me">
+ <h3 class="h-mail">Напишите мне <span class="mail-desc">если заметили какую-либо ошибку <br> или есть предложения по улудшению сайта</span><span class="close-mail"></span></h3>
+ <form class="submit-mail">
+   <label for="">
+    <input type="email" placeholder="Email">
+    <div>необязательно , но желательно для более удачной доставки письма</div>
+   </label>
+   <label>
+    <input type="text" required placeholder="Тема письма">
+   </label>
+   <textarea placeholder="Ваше сообщение" required></textarea>
+   <button type="submit">Отправить</button>
+ </form>
+</div>
 
+
+<div class="sidenav">
+  <nav>
+   <a href="index.php">Главная</a>
+   <a href="ymskaya-step.php">Ямская степь</a>
+   <a href="forest-in-vorscla.php">Лес-на-Ворскле</a>
+   <a href="walls-highlands.php">Стенки Изгорья</a>
+   <a href="bekaryukovsky-bor.php">Бекарюковский бор</a>
+   <a href="ostravaevy-yar.php">Острасьевы яры</a>
+   <a href="bald-mountain.php">Лысые горы</a>
+  </nav>
+</div>
 
 
 

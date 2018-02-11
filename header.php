@@ -8,6 +8,7 @@
   <meta name="description" content="<?php echo $description;?>">
   <title><?php echo $title ; ?></title>
   <link rel="alternate" href="<?php echo $utlAddress ;?>" hreflang="ru" />
+  <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css">
   <link rel="stylesheet" href="css/header.css">
   <script type="text/javascript">
     document.documentElement.className = document.documentElement.className.replace("no-js","js");

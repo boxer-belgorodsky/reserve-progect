@@ -60,8 +60,6 @@ div[style*="text-align: right"] > a[target="_blank"] {
   font-size: 50px; }
 
 .video-container video {
-  -webkit-filter: blur(3px);
-  filter: blur(3px);
   position: absolute;
   z-index: 0;
   bottom: 0; }
@@ -167,6 +165,7 @@ div[style*="text-align: right"] > a[target="_blank"] {
     bottom: 28px; }
 
 html {
+  font-family: 14px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   height: 100%;
@@ -176,6 +175,7 @@ html {
   transition: 4s overflow 4s; }
 
 body {
+  font-size: 17px;
   z-index: -10;
   position: relative;
   height: 100%;
@@ -438,6 +438,7 @@ header {
   box-shadow: 1px 1px 10px 5px rgba(0, 0, 0, 0.5);
   text-indent: 20px; }
   .searchdown .found-search {
+    font-size: 16px;
     height: 50px;
     line-height: 50px;
     display: none; }
@@ -454,12 +455,14 @@ header {
     display: flex;
     border-bottom: 1px solid black; }
     .searchdown .nav-search .search {
+      font-size: 18px;
       text-indent: 20px;
       -webkit-box-flex: 5;
       -ms-flex: 5;
       flex: 5;
       border: none; }
     .searchdown .nav-search .search-submit {
+      font-size: 18px;
       overflow: hidden;
       font-weight: 700;
       cursor: pointer;
@@ -961,7 +964,7 @@ header {
           -webkit-transform: translate(-50%, -50%);
           -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-          padding: 40px 10px 10px; }
+          padding: 40px 10px 20px; }
           #two .home-page aside .aside-wrapper .email-aside .form-aside .my-close {
             z-index: 10;
             display: block;
@@ -994,6 +997,7 @@ header {
                 -ms-transform: scale(2);
                 transform: scale(2); }
           #two .home-page aside .aside-wrapper .email-aside .form-aside input {
+            height: 100%;
             font-size: 22px;
             text-indent: 50px;
             border: 1px solid black;
@@ -1024,16 +1028,18 @@ header {
               width: 20px;
               height: 20px; }
           #two .home-page aside .aside-wrapper .email-aside .form-aside label {
+            height: 50px;
             position: relative;
-            width: 90%; }
+            width: 90%;
+            margin-bottom: 20px; }
           #two .home-page aside .aside-wrapper .email-aside .form-aside label::before {
             border-radius: 10px 0 0 10px;
             font-family: FontAwesome;
             content: "\f2c0";
             display: block;
-            padding: 10px;
-            height: 100%;
             width: 50px;
+            height: 50px;
+            line-height: 50px;
             text-align: center;
             background: black;
             color: #FFF;
@@ -1050,7 +1056,6 @@ header {
             content: "\f00c";
             font-family: FontAwesome;
             text-align: center;
-            line-height: 2.2;
             color: green; }
           #two .home-page aside .aside-wrapper .email-aside .form-aside label input:not(:focus):not(:hover):invalid {
             background: #FFF;
@@ -1064,6 +1069,7 @@ header {
           #two .home-page aside .aside-wrapper .email-aside .form-aside button {
             overflow: hidden;
             margin: 5px;
+            font-size: 21px;
             padding: 10px 20px;
             background: transparent;
             border: 1px solid black;
@@ -1082,15 +1088,8 @@ header {
               -webkit-transition: .5s;
               -o-transition: .5s;
               transition: .5s; }
-            #two .home-page aside .aside-wrapper .email-aside .form-aside button::after {
-              position: absolute;
-              content: "Подписаться";
-              left: 0;
-              top: 0;
-              width: 100%;
-              height: 100%;
-              line-height: 2.2;
-              color: transparent; }
+            #two .home-page aside .aside-wrapper .email-aside .form-aside button .sub-span {
+              display: block; }
             #two .home-page aside .aside-wrapper .email-aside .form-aside button:focus {
               outline-style: none; }
             #two .home-page aside .aside-wrapper .email-aside .form-aside button:hover {
@@ -1108,7 +1107,7 @@ header {
             -webkit-transition: background 1s;
             -o-transition: background 1s;
             transition: background 1s; }
-            #two .home-page aside .aside-wrapper .email-aside .form-aside .button-submit-success::after {
+            #two .home-page aside .aside-wrapper .email-aside .form-aside .button-submit-success .sub-span {
               -webkit-animation: 1s increase linear;
               animation: 1s increase linear; }
         #two .home-page aside .aside-wrapper .email-aside .email-subscribe {
@@ -1307,7 +1306,8 @@ main h1 {
       color: #343A40;
       font-size: 15px;
       padding: 10px;
-      border-radius: 5;
+      border-radius: 5px;
+      margin: auto 0;
       min-width: 100px;
       max-height: 200px;
       min-height: 200px;
@@ -1320,6 +1320,7 @@ main h1 {
         -webkit-box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.05), 0px 0px 5px #16A085;
         box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.05), 0px 0px 5px #16A085; }
     .mail-to-me .submit-mail label {
+      margin-bottom: 20px;
       font-size: 12px; }
       .mail-to-me .submit-mail label input {
         text-indent: 20px;
@@ -1337,8 +1338,9 @@ main h1 {
           -webkit-box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.05), 0px 0px 5px #16A085;
           box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.05), 0px 0px 5px #16A085; }
     .mail-to-me .submit-mail button {
+      font-size: 25px;
       border-radius: 5px;
-      margin-top: 30px;
+      margin-top: auto;
       width: 60%;
       padding: 10px;
       background: #16A085;
@@ -1468,9 +1470,13 @@ main h1 {
   max-height: 500px;
   position: relative; }
   .slick-item a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     height: 500px;
     width: 100%; }
     .slick-item a h1 {
+      font-size: 25px;
       padding: 20px 0;
       line-height: 70px;
       -webkit-transition: .8s;
@@ -1559,7 +1565,7 @@ footer .container {
       display: none;
       position: relative;
       margin-left: auto;
-      margin-top: 20px;
+      margin-top: 50px;
       padding: 20px 10px;
       color: rgba(255, 255, 255, 0.7);
       border: 2px solid  gray;
@@ -1921,7 +1927,7 @@ footer .container {
 @media screen and (max-width: 768px) {
   .sidenav {
     position: fixed;
-    width: 50%;
+    width: 70%;
     background: #FFF;
     z-index: 10000000;
     right: -100%;
@@ -1932,6 +1938,7 @@ footer .container {
     bottom: 0;
     display: block; }
     .sidenav nav {
+      background: #34495E;
       padding: 50px 0;
       height: 100%;
       display: -webkit-box;
@@ -1943,9 +1950,15 @@ footer .container {
       flex-direction: column;
       -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-      justify-content: space-between; }
+      justify-content: space-between;
+      -webkit-box-shadow: 0px 0px 15px black;
+      box-shadow: 0px 0px 15px black; }
       .sidenav nav a {
-        color: black;
+        padding: 20px 0px;
+        -webkit-box-shadow: 0px 0px 10px goldenrod;
+        box-shadow: 0px 0px 10px goldenrod;
+        background: #2C3E50;
+        font-family: 'Azoft Sans';
         text-align: center; }
   .sidenav-active {
     right: 0; }

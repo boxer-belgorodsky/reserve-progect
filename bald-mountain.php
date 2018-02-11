@@ -4,6 +4,20 @@ $utlAddress = "http://caitorg.000webhostapp.com/bald-mountain.php";
 require_once "header.php";
 
 ?>
+
+
+<style type="text/css">
+  .sidenav nav a[href="bald-mountain.php"] {
+        mix-blend-mode: screen;
+        padding: 20px 0px;
+        -webkit-box-shadow: 0px 0px 25px  gold;
+        box-shadow: 0px 0px 25px  gold;
+        background: #a0bad3;
+        font-family: 'Azoft Sans';
+        text-align: center;
+        }
+</style>
+
 <section id="two">
   <div class="container">
     <div class="row home-page">
@@ -44,7 +58,7 @@ require_once "header.php";
        </p>
        <p>Из представителей животного мира на территории участка обитают 19 видов млекопитающих обычных для лесостепи: обыкновенная лисица, степной хорь, барсук, слепыш, обыкновенный ёж, заяц-русак, кабан, косуля, лось, серый хомячок, обыкновенная бурозубка, полёвка восточноевропейская и рыжая, мышь-малютка, мышь полевая и лесная и др. Обитает более 100 видов птиц (3 вида из Красной Книги РФ — балобан, малая крачка, средний дятел). Встречаются 4 вида амфибий и 2 вида рептилий, один из которых (степная гадюка — КК РФ) акклиматизирован в 90-х годах XX в. Мир беспозвоночных животных Лысых Гор ещё далеко не изучен. Однако, уже сегодня здесь отмечены 15 видов насекомых, занесенных в Красную Книгу России и Красную Книгу Белгородской области.
        </p>
-       <div class="slick">
+       <div class="slick" id="slick">
          <div class="slick-item"><a data-fancybox="gallery" href="img/bald-mountains/kosodoj.JPG"><img src="img/bald-mountains/kosodoj.JPG"><h1>Этнодеревня "Кострома" в парке "Ключи"</h1></a></div>
          <div class="slick-item"><a data-fancybox="gallery" href="img/bald-mountains/podalirij.jpg"><img src="img/bald-mountains/podalirij.jpg"><h1>Храм святых мучениц Веры, Надежды, Любови и матери их Софии</h1></a></div>
          <div class="slick-item"><a data-fancybox="gallery" href="img/bald-mountains/lisie_gori_.jpg"><img src="img/bald-mountains/lisie_gori_.jpg"><h1>Борисовская фабрика керамики</h1></a></div>
@@ -59,7 +73,33 @@ require_once "header.php";
 </section>
 
 
+<div class="mail-to-me">
+ <h3 class="h-mail">Напишите мне <span class="mail-desc">если заметили какую-либо ошибку <br> или есть предложения по улудшению сайта</span><span class="close-mail"></span></h3>
+ <form class="submit-mail">
+   <label for="">
+    <input type="email" placeholder="Email">
+    <div>необязательно , но желательно для более удачной доставки письма</div>
+   </label>
+   <label>
+    <input type="text" required placeholder="Тема письма">
+   </label>
+   <textarea placeholder="Ваше сообщение" required></textarea>
+   <button type="submit">Отправить</button>
+ </form>
+</div>
 
+
+<div class="sidenav">
+  <nav>
+   <a href="index.php">Главная</a>
+   <a href="ymskaya-step.php">Ямская степь</a>
+   <a href="forest-in-vorscla.php">Лес-на-Ворскле</a>
+   <a href="walls-highlands.php">Стенки Изгорья</a>
+   <a href="bekaryukovsky-bor.php">Бекарюковский бор</a>
+   <a href="ostravaevy-yar.php">Острасьевы яры</a>
+   <a href="bald-mountain.php">Лысые горы</a>
+  </nav>
+</div>
 
 
 

@@ -57,7 +57,7 @@ div[style*="text-align: right"] > a[target="_blank"]
   font-size: 50px
 
 .video-container video
-  filter: blur(3px)
+
   position: absolute;
   z-index: 0;
   bottom: 0;
@@ -151,13 +151,13 @@ div[style*="text-align: right"] > a[target="_blank"]
 
 
 html
-
+ font-family: 14px
  box-sizing: border-box
  height: 100%
  overflow: hidden
  transition: 4s overflow 4s
 body
-
+ font-size: 17px
  z-index: -10
  position: relative
  height: 100%
@@ -365,6 +365,7 @@ header
  box-shadow: 1px 1px 10px 5px rgba(0,0,0,.5)
  text-indent: 20px
  .found-search
+  font-size: 16px
   height: 50px
   line-height: 50px
   display: none
@@ -381,10 +382,12 @@ header
   border-bottom: 1px solid black
 
   .search
+   font-size: 18px
    text-indent: 20px
    flex: 5
    border: none
   .search-submit
+   font-size: 18px
    overflow: hidden
    font-weight: 700
    cursor: pointer
@@ -737,7 +740,7 @@ header
       left: 50%
       top: 50%
       transform: translate(-50%,-50%)
-      padding: 40px 10px 10px
+      padding: 40px 10px 20px
       .my-close
        z-index: 10
        display: block
@@ -767,6 +770,7 @@ header
          transform: scale(2)
 
       input
+       height: 100%
        font-size: 22px
        text-indent: 50px
        border: 1px solid black
@@ -796,17 +800,19 @@ header
         width: 20px
         height: 20px
       label
+       height: 50px
        position: relative
        width: 90%
+       margin-bottom: 20px
       label
        &::before
         border-radius: 10px 0 0 10px
         font-family: $awesome
         content: "\f2c0"
         display: block
-        padding: 10px
-        height: 100%
         width: 50px
+        height: 50px
+        line-height: 50px
         text-align: center
         background: black
         color: #FFF
@@ -824,7 +830,6 @@ header
        content: "\f00c"
        font-family: $awesome
        text-align: center
-       line-height: 2.2
        color: green
       label input:not(:focus):not(:hover):invalid
        background: #FFF
@@ -838,6 +843,7 @@ header
       button
        overflow: hidden
        margin: 5px
+       font-size: 21px
        padding: 10px 20px
        background: transparent
        border: 1px solid black
@@ -854,15 +860,8 @@ header
         width: 0
         background: black
         transition: .5s
-       &::after
-        position: absolute
-        content: "Подписаться"
-        left: 0
-        top: 0
-        width: 100%
-        height: 100%
-        line-height: 2.2
-        color: transparent
+       .sub-span
+        display: block
        &:focus
         outline-style: none
        &:hover
@@ -876,7 +875,7 @@ header
        color: black !important
        background: black !important
        transition: background 1s
-       &::after
+       .sub-span
         animation: 1s increase linear
      .email-subscribe
       border: none
@@ -1063,7 +1062,8 @@ main
    color:  #343A40
    font-size: 15px
    padding: 10px
-   border-radius: 5
+   border-radius: 5px
+   margin: auto 0
    min-width: 100px
    max-height: 200px
    min-height: 200px
@@ -1074,6 +1074,7 @@ main
     border: 1px solid #16A085
     box-shadow: inset 0px 2px 5px rgba(0,0,0,.05) ,  0px 0px 5px #16A085
   label
+   margin-bottom: 20px
    font-size: 12px
    input
     text-indent: 20px
@@ -1089,8 +1090,9 @@ main
      border: 1px solid #16A085
      box-shadow: inset 0px 2px 5px rgba(0,0,0,.05) ,  0px 0px 5px #16A085
   button
+   font-size: 25px
    border-radius: 5px
-   margin-top: 30px
+   margin-top: auto
    width: 60%
    padding: 10px
    background: #16A085
@@ -1196,9 +1198,11 @@ main
   max-height: 500px
   position: relative
   a
+   display: flex
    height: 500px
    width: 100%
    h1
+    font-size: 25px
     padding: 20px 0
     line-height: 70px
     transition: .8s
@@ -1273,7 +1277,7 @@ footer
     display: none
     position: relative
     margin-left: auto
-    margin-top: 20px
+    margin-top: 50px
     padding: 20px 10px
     color: rgba(255,255,255,.7)
     border: 2px solid  gray

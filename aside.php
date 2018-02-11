@@ -8,7 +8,7 @@
              </label>
              <label for="subscribe-email"><input placeholder="Email" type="email" name="subscribe-email" required><span></span>
              </label>
-             <button type="submit">Подписаться</button>
+             <button type="submit"><span class="sub-span">Подписаться</span></button>
            </form>
            <div class="email-subscribe">Подпишись</div>
          </div>
