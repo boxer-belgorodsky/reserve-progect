@@ -13,6 +13,23 @@
   <script type="text/javascript">
     document.documentElement.className = document.documentElement.className.replace("no-js","js");
   </script>
+
+<script type="text/javascript">
+
+function constructor(way , style = "stylesheet" , type = "text/css"){
+
+    var link = document.createElement("link");
+    link.setAttribute("rel" , style);
+    link.setAttribute("type" , type);
+    link.setAttribute("href" , way);
+    document.querySelector("head").appendChild(link);
+        }
+
+
+    constructor("css/main.css");
+
+
+</script>
 </head>
 <body>
 
