@@ -24,7 +24,13 @@ function constructor(way , style = "stylesheet" , type = "text/css"){
     link.setAttribute("href" , way);
     document.querySelector("head").appendChild(link);
         }
+    constructor("css/animate.css");
 
+    constructor("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+    constructor("img/favicon.png" , "shortcut icon" , "image/x-icon");
+    constructor("css/slick.css");
+    constructor("css/slick-theme.css");
+    constructor("css/jquery.fancybox.min.css");
 
     constructor("css/main.css");
 

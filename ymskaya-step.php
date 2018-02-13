@@ -121,82 +121,82 @@ require_once "header.php";
                             <div class="slick" id="slick">
          <div class="slick-item">
           <a data-fancybox="gallery" href="img/ymskay-step/Dubrava_Kushuguri11.JPG"><img src="img/ymskay-step/Dubrava_Kushuguri11.JPG">
-            <h1>Этнодеревня "Кострома" в парке "Ключи"</h1>
+            <h1>Дубрава Кучугуры</h1>
           </a>
         </div>
          <div class="slick-item">
           <a data-fancybox="gallery" href="img/ymskay-step/Halfej_ponikajuchij15.JPG"><img src="img/ymskay-step/Halfej_ponikajuchij15.JPG">
-            <h1>Храм святых мучениц Веры, Надежды, Любови и матери их Софии</h1>
+            <h1>Шалфей поникающий</h1>
           </a>
         </div>
          <div class="slick-item">
           <a data-fancybox="gallery" href="img/ymskay-step/Jacherica_pritkaja19.JPG"><img src="img/ymskay-step/Jacherica_pritkaja19.JPG">
-            <h1>Борисовская фабрика керамики</h1>
+            <h1>Ящерица прыткая</h1>
           </a>
         </div>
          <div class="slick-item">
           <a data-fancybox="gallery" href="img/ymskay-step/Jivokost17.JPG"><img src="img/ymskay-step/Jivokost17.JPG">
-            <h1>Памятник Победы - Звонница на Прохоровском поле</h1>
+            <h1>Живокость</h1>
           </a>
         </div>
         <div class="slick-item">
           <a data-fancybox="gallery" href="img/ymskay-step/Kosuli20.jpg"><img src="img/ymskay-step/Kosuli20.jpg">
-            <h1>Памятник Победы - Звонница на Прохоровском поле</h1>
+            <h1>Косули</h1>
           </a>
         </div>
         <div class="slick-item">
           <a data-fancybox="gallery" href="img/ymskay-step/Kustarnikovie_zarosli13.JPG"><img src="img/ymskay-step/Kustarnikovie_zarosli13.JPG">
-            <h1>Памятник Победы - Звонница на Прохоровском поле</h1>
+            <h1>Кустарниковые заросли б.Суры</h1>
           </a>
         </div>
         <div class="slick-item">
           <a data-fancybox="gallery" href="img/ymskay-step/Len_ukrainskij14.JPG"><img src="img/ymskay-step/Len_ukrainskij14.JPG">
-            <h1>Памятник Победы - Звонница на Прохоровском поле</h1>
+            <h1>Лен украинский</h1>
           </a>
         </div>
         <div class="slick-item">
           <a data-fancybox="gallery" href="img/ymskay-step/Lisa18.jpg"><img src="img/ymskay-step/Lisa18.jpg">
-            <h1>Памятник Победы - Звонница на Прохоровском поле</h1>
+            <h1>Лиса</h1>
           </a>
         </div>
         <div class="slick-item">
           <a data-fancybox="gallery" href="img/ymskay-step/Nivjanik_obiknovennij16.JPG"><img src="img/ymskay-step/Nivjanik_obiknovennij16.JPG">
-            <h1>Памятник Победы - Звонница на Прохоровском поле</h1>
+            <h1>Нивяник обыкновенный</h1>
           </a>
         </div>
         <div class="slick-item">
           <a data-fancybox="gallery" href="img/ymskay-step/Savannaja_step_na_plakore12.JPG"><img src="img/ymskay-step/Savannaja_step_na_plakore12.JPG">
-            <h1>Памятник Победы - Звонница на Прохоровском поле</h1>
+            <h1>"Саванновая" степь на плакоре</h1>
           </a>
         </div>
         <div class="slick-item">
           <a data-fancybox="gallery" href="img/ymskay-step/Stp3.JPG"><img src="img/ymskay-step/Stp3.JPG">
-            <h1>Памятник Победы - Звонница на Прохоровском поле</h1>
+            <h1></h1>
           </a>
         </div>
         <div class="slick-item">
           <a data-fancybox="gallery" href="img/ymskay-step/Stp4.JPG"><img src="img/ymskay-step/Stp4.JPG">
-            <h1>Памятник Победы - Звонница на Прохоровском поле</h1>
+            <h1></h1>
           </a>
         </div>
         <div class="slick-item">
           <a data-fancybox="gallery" href="img/ymskay-step/Stp5.JPG"><img src="img/ymskay-step/Stp5.JPG">
-            <h1>Памятник Победы - Звонница на Прохоровском поле</h1>
+            <h1></h1>
           </a>
         </div>
         <div class="slick-item">
           <a data-fancybox="gallery" href="img/ymskay-step/Stp6.JPG"><img src="img/ymskay-step/Stp6.JPG">
-            <h1>Памятник Победы - Звонница на Прохоровском поле</h1>
+            <h1></h1>
           </a>
         </div>
         <div class="slick-item">
           <a data-fancybox="gallery" href="img/ymskay-step/Stp7.jpg"><img src="img/ymskay-step/Stp7.JPG">
-            <h1>Памятник Победы - Звонница на Прохоровском поле</h1>
+            <h1></h1>
           </a>
         </div>
         <div class="slick-item">
           <a data-fancybox="gallery" href="img/ymskay-step/Stp8.JPG"><img src="img/ymskay-step/Stp8.JPG">
-            <h1>Памятник Победы - Звонница на Прохоровском поле</h1>
+            <h1></h1>
           </a>
         </div>
        </div>

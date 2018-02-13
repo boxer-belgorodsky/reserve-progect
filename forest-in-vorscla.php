@@ -43,10 +43,25 @@ require_once "header.php";
         <p>Из водных растений в Ворскле обычны плавающие, образующие заросли у берегов - кубышка жёлтая, кувшинка белая,  ряска, роголистник. Из сорных растений подмаренник цепкий, крапивы двудомная и жгучая, горец птичий, лопух большой, чистотел, щирица запрокинутая.
         </p>
         <div class="slick" id="slick">
-         <div class="slick-item"><a data-fancybox="gallery" href="img/forest/guk-olen.jpg"><img src="img/forest/beetle_small.jpg"><h1>Этнодеревня "Кострома" в парке "Ключи"</h1></a></div>
-         <div class="slick-item"><a data-fancybox="gallery" href="img/forest/lesnaja_kunica.jpg"><img src="img/forest/marten_small.jpg"><h1>Храм святых мучениц Веры, Надежды, Любови и матери их Софии</h1></a></div>
-         <div class="slick-item"><a data-fancybox="gallery" href="img/forest/pechenochnica_blagorodnaja.jpg"><img src="img/forest/hepatica_small.jpg"><h1>Борисовская фабрика керамики</h1></a></div>
-         <div class="slick-item"><a data-fancybox="gallery" href="img/forest/starovosrastnaja dubrava.jpg"><img src="img/forest/oak_small.jpg"><h1>Памятник Победы - Звонница на Прохоровском поле</h1></a></div>
+         <div class="slick-item">
+          <a data-fancybox="gallery" href="img/forest/guk-olen.jpg">
+          <img src="img/forest/guk-olen.jpg"><h1>Жук-олень</h1>
+         </a></div>
+         <div class="slick-item">
+          <a data-fancybox="gallery" href="img/forest/lesnaja_kunica.jpg">
+          <img src="img/forest/lesnaja_kunica.jpg">
+          <h1>Лесная куница</h1>
+         </a></div>
+         <div class="slick-item">
+          <a data-fancybox="gallery" href="img/forest/pechenochnica_blagorodnaja.jpg">
+          <img src="img/forest/pechenochnica_blagorodnaja.jpg">
+          <h1>Печеночница благородная</h1>
+         </a></div>
+         <div class="slick-item">
+          <a data-fancybox="gallery" href="img/forest/starovosrastnaja dubrava.jpg">
+          <img src="img/forest/starovosrastnaja dubrava.jpg">
+          <h1>Старовозрастная дубрава</h1>
+         </a></div>
        </div>
       </main>
       <?php require_once "aside.php" ?>

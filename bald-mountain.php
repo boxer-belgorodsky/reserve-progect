@@ -1,4 +1,5 @@
-<?php
+
+  <?php
 $title = "Лысые горы";
 $utlAddress = "http://caitorg.000webhostapp.com/bald-mountain.php";
 require_once "header.php";
@@ -59,12 +60,42 @@ require_once "header.php";
        <p>Из представителей животного мира на территории участка обитают 19 видов млекопитающих обычных для лесостепи: обыкновенная лисица, степной хорь, барсук, слепыш, обыкновенный ёж, заяц-русак, кабан, косуля, лось, серый хомячок, обыкновенная бурозубка, полёвка восточноевропейская и рыжая, мышь-малютка, мышь полевая и лесная и др. Обитает более 100 видов птиц (3 вида из Красной Книги РФ — балобан, малая крачка, средний дятел). Встречаются 4 вида амфибий и 2 вида рептилий, один из которых (степная гадюка — КК РФ) акклиматизирован в 90-х годах XX в. Мир беспозвоночных животных Лысых Гор ещё далеко не изучен. Однако, уже сегодня здесь отмечены 15 видов насекомых, занесенных в Красную Книгу России и Красную Книгу Белгородской области.
        </p>
        <div class="slick" id="slick">
-         <div class="slick-item"><a data-fancybox="gallery" href="img/bald-mountains/kosodoj.JPG"><img src="img/bald-mountains/kosodoj.JPG"><h1>Этнодеревня "Кострома" в парке "Ключи"</h1></a></div>
-         <div class="slick-item"><a data-fancybox="gallery" href="img/bald-mountains/podalirij.jpg"><img src="img/bald-mountains/podalirij.jpg"><h1>Храм святых мучениц Веры, Надежды, Любови и матери их Софии</h1></a></div>
-         <div class="slick-item"><a data-fancybox="gallery" href="img/bald-mountains/lisie_gori_.jpg"><img src="img/bald-mountains/lisie_gori_.jpg"><h1>Борисовская фабрика керамики</h1></a></div>
-         <div class="slick-item"><a data-fancybox="gallery" href="img/bald-mountains/lg3.jpg"><img src="img/bald-mountains/lg3.jpg"><h1>Памятник Победы - Звонница на Прохоровском поле</h1></a></div>
-         <div class="slick-item"><a data-fancybox="gallery" href="img/bald-mountains/lisie2.jpg"><img src="img/bald-mountains/lisie2.jpg"><h1>Памятник Победы - Звонница на Прохоровском поле</h1></a></div>
-         <div class="slick-item"><a data-fancybox="gallery" href="img/bald-mountains/prolomnik_Kozo-Poljanskogo.jpg"><img src="img/bald-mountains/prolomnik_Kozo-Poljanskogo.jpg"><h1>Памятник Победы - Звонница на Прохоровском поле</h1></a></div>
+         <div class="slick-item">
+            <a data-fancybox="gallery" href="img/bald-mountains/kosodoj.JPG">
+            <img src="img/bald-mountains/kosodoj.JPG">
+            <h1>Козодой</h1>
+         </a>
+         </div>
+         <div class="slick-item">
+            <a data-fancybox="gallery" href="img/bald-mountains/podalirij.jpg">
+            <img src="img/bald-mountains/podalirij.jpg">
+            <h1>Подалирий</h1>
+         </a>
+         </div>
+         <div class="slick-item">
+            <a data-fancybox="gallery" href="img/bald-mountains/lisie_gori_.jpg">
+              <img src="img/bald-mountains/lisie_gori_.jpg">
+              <h1></h1>
+           </a>
+         </div>
+         <div class="slick-item">
+            <a data-fancybox="gallery" href="img/bald-mountains/lg3.jpg">
+            <img src="img/bald-mountains/lg3.jpg">
+            <h1></h1>
+            </a>
+         </div>
+         <div class="slick-item">
+            <a data-fancybox="gallery" href="img/bald-mountains/lisie2.jpg">
+            <img src="img/bald-mountains/lisie2.jpg">
+            <h1></h1>
+            </a>
+         </div>
+         <div class="slick-item">
+            <a data-fancybox="gallery" href="img/bald-mountains/prolomnik_Kozo-Poljanskogo.jpg">
+            <img src="img/bald-mountains/prolomnik_Kozo-Poljanskogo.jpg">
+            <h1>Проломник Козо-Полянского</h1>
+            </a>
+         </div>
        </div>
       </main>
       <?php require_once "aside.php" ?>

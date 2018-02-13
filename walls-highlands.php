@@ -46,14 +46,54 @@ require_once "header.php";
        <p>Во флоре заповедного участка насчитывается около 710 видов сосудистых растений, 356 видов цветковых растений. Из них внесены в Красную книгу РФ — 10, в Красную книгу Белгородской области — 46, в том числе: некоторые орхидные, ковыли, оносма. Волчеягодник Софии к настоящему времени не сохранился.В настоящее время сохранилось 8 экземпляров сосны меловой в возрасте от 70 до 200 лет
        </p>
         <div class="slick" id="slick">
-         <div class="slick-item"><a data-fancybox="gallery" href="img/walls/Barsuk.jpg"><img src="img/walls/Barsuk.jpg"><h1>Этнодеревня "Кострома" в парке "Ключи"</h1></a></div>
-         <div class="slick-item"><a data-fancybox="gallery" href="img/walls/Dibka_stepnaja.jpg"><img src="img/walls/Dibka_stepnaja.jpg"><h1>Храм святых мучениц Веры, Надежды, Любови и матери их Софии</h1></a></div>
-         <div class="slick-item"><a data-fancybox="gallery" href="img/walls/Klematis_celnolistnij.JPG"><img src="img/walls/Klematis_celnolistnij.JPG"><h1>Борисовская фабрика керамики</h1></a></div>
-         <div class="slick-item"><a data-fancybox="gallery" href="img/walls/Kopeechnik_krupnocvetkovij.JPG"><img src="img/walls/Kopeechnik_krupnocvetkovij.JPG"><h1>Памятник Победы - Звонница на Прохоровском поле</h1></a></div>
-         <div class="slick-item"><a data-fancybox="gallery" href="img/walls/Nivjanik_obiknovennij.JPG"><img src="img/walls/Nivjanik_obiknovennij.JPG"><h1>Памятник Победы - Звонница на Прохоровском поле</h1></a></div>
-         <div class="slick-item"><a data-fancybox="gallery" href="img/walls/Sosna_melovaja.JPG"><img src="img/walls/Sosna_melovaja.JPG"><h1>Памятник Победы - Звонница на Прохоровском поле</h1></a></div>
-         <div class="slick-item"><a data-fancybox="gallery" href="img/walls/Stenki_isgorja1.JPG"><img src="img/walls/Stenki_isgorja1.JPG"><h1>Памятник Победы - Звонница на Прохоровском поле</h1></a></div>
-         <div class="slick-item"><a data-fancybox="gallery" href="img/walls/zjablik.JPG"><img src="img/walls/zjablik.JPG"><h1>Памятник Победы - Звонница на Прохоровском поле</h1></a></div>
+         <div class="slick-item">
+          <a data-fancybox="gallery" href="img/walls/Barsuk.jpg">
+           <img src="img/walls/Barsuk.jpg">
+           <h1>Барсук</h1>
+          </a>
+         </div>
+         <div class="slick-item">
+          <a data-fancybox="gallery" href="img/walls/Dibka_stepnaja.jpg">
+           <img src="img/walls/Dibka_stepnaja.jpg">
+           <h1>Дыбка степная</h1>
+          </a>
+         </div>
+         <div class="slick-item">
+          <a data-fancybox="gallery" href="img/walls/Klematis_celnolistnij.JPG">
+            <img src="img/walls/Klematis_celnolistnij.JPG">
+            <h1>Клематис цельнолистный</h1>
+          </a>
+         </div>
+         <div class="slick-item">
+          <a data-fancybox="gallery" href="img/walls/Kopeechnik_krupnocvetkovij.JPG">
+           <img src="img/walls/Kopeechnik_krupnocvetkovij.JPG">
+           <h1>Копеечник крупноцветковый</h1>
+          </a>
+         </div>
+         <div class="slick-item">
+          <a data-fancybox="gallery" href="img/walls/Nivjanik_obiknovennij.JPG">
+            <img src="img/walls/Nivjanik_obiknovennij.JPG">
+            <h1>Нивяник обыкновенный</h1>
+          </a>
+         </div>
+         <div class="slick-item">
+          <a data-fancybox="gallery" href="img/walls/Sosna_melovaja.JPG">
+          <img src="img/walls/Sosna_melovaja.JPG">
+          <h1>Сосна меловая</h1>
+          </a>
+         </div>
+         <div class="slick-item">
+          <a data-fancybox="gallery" href="img/walls/Stenki_isgorja1.JPG">
+           <img src="img/walls/Stenki_isgorja1.JPG">
+           <h1></h1>
+          </a>
+         </div>
+         <div class="slick-item">
+          <a data-fancybox="gallery" href="img/walls/zjablik.JPG">
+            <img src="img/walls/zjablik.JPG">
+            <h1>Самец зяблика</h1>
+          </a>
+         </div>
        </div>
      </main>
       <?php require_once "aside.php" ?>

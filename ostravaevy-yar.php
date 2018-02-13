@@ -34,52 +34,52 @@ require_once "header.php";
       <div class="slick" id="slick">
          <div class="slick-item">
           <a data-fancybox="gallery" href="img/ostr-zr/giacintik_belovatij4.JPG"><img src="img/ostr-zr/giacintik_belovatij4.JPG">
-            <h1>Этнодеревня "Кострома" в парке "Ключи"</h1>
+            <h1>Гиацинтик беловатый</h1>
           </a>
         </div>
          <div class="slick-item">
           <a data-fancybox="gallery" href="img/ostr-zr/Halfej_lugovojr7.JPG"><img src="img/ostr-zr/Halfej_lugovojr7.JPG">
-            <h1>Храм святых мучениц Веры, Надежды, Любови и матери их Софии</h1>
+            <h1>Шалфей луговой</h1>
           </a>
         </div>
          <div class="slick-item">
           <a data-fancybox="gallery" href="img/ostr-zr/jar1.JPG"><img src="img/ostr-zr/jar1.JPG">
-            <h1>Борисовская фабрика керамики</h1>
+            <h1></h1>
           </a>
         </div>
          <div class="slick-item">
           <a data-fancybox="gallery" href="img/ostr-zr/jar2.JPG"><img src="img/ostr-zr/jar2.JPG">
-            <h1>Памятник Победы - Звонница на Прохоровском поле</h1>
+            <h1></h1>
           </a>
         </div>
         <div class="slick-item">
           <a data-fancybox="gallery" href="img/ostr-zr/jar3.JPG"><img src="img/ostr-zr/jar3.JPG">
-            <h1>Памятник Победы - Звонница на Прохоровском поле</h1>
+            <h1></h1>
           </a>
         </div>
         <div class="slick-item">
           <a data-fancybox="gallery" href="img/ostr-zr/Mih_poievaja12.JPG"><img src="img/ostr-zr/Mih_poievaja12.JPG">
-            <h1>Памятник Победы - Звонница на Прохоровском поле</h1>
+            <h1>Полевая мышь</h1>
           </a>
         </div>
         <div class="slick-item">
           <a data-fancybox="gallery" href="img/ostr-zr/Nagolovatka_Ledebura6.JPG"><img src="img/ostr-zr/Nagolovatka_Ledebura6.JPG">
-            <h1>Памятник Победы - Звонница на Прохоровском поле</h1>
+            <h1>Наголоватка Ледебура</h1>
           </a>
         </div>
         <div class="slick-item">
           <a data-fancybox="gallery" href="img/ostr-zr/Orlan-belohvost8.JPG"><img src="img/ostr-zr/Orlan-belohvost8.JPG">
-            <h1>Памятник Победы - Звонница на Прохоровском поле</h1>
+            <h1>Молодой орлан-белохвост</h1>
           </a>
         </div>
         <div class="slick-item">
           <a data-fancybox="gallery" href="img/ostr-zr/Poliksena11.JPG"><img src="img/ostr-zr/Poliksena11.JPG">
-            <h1>Памятник Победы - Звонница на Прохоровском поле</h1>
+            <h1>Поликсена</h1>
           </a>
         </div>
         <div class="slick-item">
           <a data-fancybox="gallery" href="img/ostr-zr/Prostrel_lugovoj5.JPG"><img src="img/ostr-zr/Prostrel_lugovoj5.JPG">
-            <h1>Памятник Победы - Звонница на Прохоровском поле</h1>
+            <h1>Прострел луговой</h1>
           </a>
         </div>
        </div>
