@@ -40,6 +40,61 @@ require_once "header.php";
         <p>С 1869 по 1902 год — в течение 33 лет ведет наблюдение за соснами на мелу зарубежный ученый Кёппен. Он написал замечательный труд «Географическое распространение хвойных деревьев в Европейской России».
         </p>
         <p>В 1965 году Бекарюковский бор посетили ученые института ботаники Академии наук СССР под руководством профессора М. И. Котова. К сожалению, многих растений они недосчитались... Не нашли знаменитый волчеягодник Софии — гордость нашей природы. Исчезновение многих реликтовых растений объясняется деятельностью человека. Реликтовые сосновые боры являются памятниками природы. </p>
+        <div class="slick" id="slick">
+         <div class="slick-item">
+          <a data-fancybox="gallery" href="img/bek-bor/Bekaryukovsky_bor_Arbuzova_20.JPG">
+          <img src="img/bek-bor/Bekaryukovsky_bor_Arbuzova_20.JPG"><h1>Бекарюковский бор</h1>
+         </a>
+         </div>
+         <div class="slick-item">
+          <a data-fancybox="gallery" href="img/bek-bor/molodie_sosni.jpg">
+          <img src="img/bek-bor/molodie_sosni.jpg">
+          <h1>Молодые сосны</h1>
+         </a>
+         </div>
+         <div class="slick-item">
+          <a data-fancybox="gallery" href="img/bek-bor/Molodoj_sosnjak.jpg">
+          <img src="img/bek-bor/Molodoj_sosnjak.jpg">
+          <h1>Молодой сосняк</h1>
+         </a>
+         </div>
+         <div class="slick-item">
+          <a data-fancybox="gallery" href="img/bek-bor/Bekaryukovsky_bor.jpg">
+          <img src="img/bek-bor/Bekaryukovsky_bor.jpg">
+          <h1>Бекарюковский бор</h1>
+         </a>
+        </div>
+        <div class="slick-item">
+          <a data-fancybox="gallery" href="img/bek-bor/hegek.jpg">
+          <img src="img/bek-bor/hegek.jpg">
+          <h1>река Нежеголь</h1>
+         </a>
+        </div>
+        <div class="slick-item">
+          <a data-fancybox="gallery" href="img/bek-bor/koren.jpg">
+          <img src="img/bek-bor/koren.jpg">
+          <h1>река Корень</h1>
+         </a>
+        </div>
+        <div class="slick-item">
+          <a data-fancybox="gallery" href="img/bek-bor/river_hegek.jpg">
+          <img src="img/bek-bor/river_hegek.jpg">
+          <h1>река Нежеголь</h1>
+         </a>
+        </div>
+        <div class="slick-item">
+          <a data-fancybox="gallery" href="img/bek-bor/river-hegek_2.jpg">
+          <img src="img/bek-bor/river-hegek_2.jpg">
+          <h1>река Нежеголь</h1>
+         </a>
+        </div>
+        <div class="slick-item">
+          <a data-fancybox="gallery" href="img/bek-bor/tit_sosni.jpg">
+          <img src="img/bek-bor/tit_sosni.jpg">
+          <h1>Титовские сосны</h1>
+         </a>
+        </div>
+       </div>
       </main>
       <?php require_once "aside.php" ?>
     </div>

@@ -46,22 +46,26 @@ require_once "header.php";
          <div class="slick-item">
           <a data-fancybox="gallery" href="img/forest/guk-olen.jpg">
           <img src="img/forest/guk-olen.jpg"><h1>Жук-олень</h1>
-         </a></div>
+         </a>
+         </div>
          <div class="slick-item">
           <a data-fancybox="gallery" href="img/forest/lesnaja_kunica.jpg">
           <img src="img/forest/lesnaja_kunica.jpg">
           <h1>Лесная куница</h1>
-         </a></div>
+         </a>
+         </div>
          <div class="slick-item">
           <a data-fancybox="gallery" href="img/forest/pechenochnica_blagorodnaja.jpg">
           <img src="img/forest/pechenochnica_blagorodnaja.jpg">
           <h1>Печеночница благородная</h1>
-         </a></div>
+         </a>
+         </div>
          <div class="slick-item">
           <a data-fancybox="gallery" href="img/forest/starovosrastnaja dubrava.jpg">
           <img src="img/forest/starovosrastnaja dubrava.jpg">
           <h1>Старовозрастная дубрава</h1>
-         </a></div>
+         </a>
+        </div>
        </div>
       </main>
       <?php require_once "aside.php" ?>
