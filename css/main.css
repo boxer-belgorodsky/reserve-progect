@@ -1844,6 +1844,25 @@ footer .container {
   100% {
     opacity: 0; } }
 
+.source {
+  background: #4B0082;
+  padding: 20px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  display: block;
+  width: 50%;
+  font-family: 'Azoft Sans';
+  text-align: center;
+  color: #FFF;
+  -webkit-box-shadow: 0px 6px 5px #2e004f;
+  box-shadow: 0px 6px 5px #2e004f; }
+  .source:hover {
+    -webkit-transform: translateY(2px);
+    -ms-transform: translateY(2px);
+    transform: translateY(2px);
+    -webkit-box-shadow: 0px 4px 5px #2e004f;
+    box-shadow: 0px 4px 5px #2e004f; }
+
 @media screen and (max-height: 667px) {
   .video-container .filter {
     font-size: 40px; }
